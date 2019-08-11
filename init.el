@@ -10,7 +10,7 @@
 (setq auto-save-default nil)
 (setq ring-bell-function 'ignore)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
-(define-key key-translation-map (kbd "<backtab>") (kbd "C-x C-b"))
+(global-set-key (kbd "<backtab>") 'switch-to-buffer)
 
 (require 'init-package)
 (require 'init-window)

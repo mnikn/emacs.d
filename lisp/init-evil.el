@@ -37,7 +37,9 @@
  "w1" 'split-and-follow-vertically
  "w2" 'split-and-follow-horizontally
  "wd" 'delete-window
- "c" 'counsel-M-x)
+ "c" 'counsel-M-x
+ "gs" 'magit-status
+ "gl" 'magit-log-current)
 
 (provide 'init-evil)
 
