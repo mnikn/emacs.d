@@ -6,9 +6,13 @@
 
 ;; editor
 (electric-pair-mode t)
+(global-auto-revert-mode t)
+(setq auto-save-default nil)
+(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 (require 'init-package)
-(require 'init-smex)
+;; (require 'init-smex)
+(require 'init-ivy)
 (require 'init-evil)
 (require 'init-company)
 (require 'init-flycheck)
@@ -20,7 +24,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (evil-leader evil smiles-mode smex))))
+ '(package-selected-packages (quote (general evil smiles-mode smex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
