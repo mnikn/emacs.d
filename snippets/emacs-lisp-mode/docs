@@ -7,8 +7,6 @@
 ;;; Commentary:
 ;;; Code:
 
-${3:(message "Hello World!")}
-
 (provide '$1)
 
 ;;; $1.el ends here

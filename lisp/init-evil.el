@@ -2,12 +2,26 @@
 ;;; Commentary:
 ;;; Code:
 
+(defun split-and-follow-horizontally ()
+  "Create horizontally window and switch."
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+
+(defun split-and-follow-vertically ()
+  "Create vertically window and switch."
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+
 (require-package 'evil)
 (evil-mode t)
 
 (require-package 'general)
 (general-define-key
- :states 'normal
+ :states '(normal visual)
  :prefix "SPC"
  "s" 'swiper
  "ff" 'find-file
@@ -20,8 +34,8 @@
  "<right>" 'windmove-right
  "<up>" 'windmove-up
  "<down>" 'windmove-down
- "w1" 'split-window-horizontally
- "w2" 'split-window-vertically
+ "w1" 'split-and-follow-vertically
+ "w2" 'split-and-follow-horizontally
  "wd" 'delete-window
  "c" 'counsel-M-x)
 

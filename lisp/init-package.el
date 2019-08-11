@@ -3,7 +3,8 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
-                         ("melpa" . "http://melpa.milkbox.net/packages/")))
+			 ;; ("melpa" . "http://melpa.milkbox.net/packages/")
+                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 (defun require-package (package &optional min-version no-refresh)
   "Ask elpa to install given PACKAGE."
