@@ -3,8 +3,10 @@
 ;;; Code:
 
 (require-package 'projectile)
+(require-package 'counsel-projectile)
 
-(projectile-mode t)
+
+(counsel-projectile-mode t)
 
 (require-package 'treemacs)
 (require-package 'treemacs-evil)
