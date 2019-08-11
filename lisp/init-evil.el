@@ -25,6 +25,7 @@
  :prefix "SPC"
  "s" 'swiper
  "ff" 'find-file
+ "fm" 'dired
  "hf" 'find-function
  "hv" 'find-variable
  "bs" 'switch-to-buffer
@@ -39,7 +40,8 @@
  "wd" 'delete-window
  "c" 'counsel-M-x
  "gs" 'magit-status
- "gl" 'magit-log-current)
+ "gl" 'magit-log-current
+ "p" 'projectile-command-map)
 
 (provide 'init-evil)
 
