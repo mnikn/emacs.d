@@ -9,6 +9,11 @@
 (global-auto-revert-mode t)
 (setq auto-save-default nil)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+(global-set-key (kbd "C-`") 'delete-window)
+(global-set-key (kbd "S-<left>") 'windmove-left)
+(global-set-key (kbd "S-<right>") 'windmove-right)
+(global-set-key (kbd "S-<up>") 'windmove-up)
+(global-set-key (kbd "S-<down>") 'windmove-down)
 
 (require 'init-package)
 ;; (require 'init-smex)
