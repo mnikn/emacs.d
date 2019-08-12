@@ -8,7 +8,10 @@
 (electric-pair-mode t)
 (global-auto-revert-mode t)
 (setq auto-save-default nil)
+(setq make-backup-files nil)
+(setq create-lockfiles nil)
 (setq ring-bell-function 'ignore)
+(setq-default tab-width 2)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 
@@ -22,6 +25,7 @@
 (require 'init-git)
 (require 'init-projectile)
 (require 'init-langs)
+(require 'init-ctags)
 (require 'init-evil)
 ;; (require 'init-smex)
 

@@ -22,9 +22,9 @@
  "<up>" 'windmove-up
  "<down>" 'windmove-down
  "wv" 'split-and-follow-vertically
- "wr" 'split-and-follow-horizontally
+ "wh" 'split-and-follow-horizontally
  "wd" 'delete-window
- "c" 'counsel-M-x
+ "m" 'counsel-M-x
  "gs" 'magit-status
  "gl" 'magit-log-current
  "p" 'projectile-command-map)

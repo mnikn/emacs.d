@@ -2,5 +2,8 @@
 /smex-items
 /transient
 /.cache
+/auto-save-list
+/ctags
+/eshell
 network-security.data
 projectile-bookmarks.eld

@@ -16,7 +16,17 @@
 (require-package 'js2-mode)
 
 ;; typescript
+(defun setup-tide-mode ()
+  "Typescript mode setup."
+  (interactive)
+  (tide-setup)
+  (flycheck-mode t)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode t)
+  (company-mode t))
+
 (require-package 'tide)
+(setq company-tooltip-align-annotations t)
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook
@@ -25,6 +35,8 @@
               (setup-tide-mode))))
 ;; enable typescript-tslint checker
 (flycheck-add-mode 'typescript-tslint 'web-mode)
+(setq tide-format-options
+      '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunction t :placeOpenBraceOnNewLineForControlBlocks t :indentSize 2 :tabSize 2))
 
 (provide 'init-langs)
 
