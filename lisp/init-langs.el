@@ -28,6 +28,7 @@
 (require-package 'tide)
 (setq company-tooltip-align-annotations t)
 (add-hook 'typescript-mode-hook #'setup-tide-mode)
+(add-hook 'before-save-hook 'tide-format-before-save)
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook
           (lambda ()
