@@ -19,7 +19,7 @@
 (global-set-key (kbd "C-c h") 'split-and-follow-horizontally)
 (global-set-key (kbd "C-c v") 'split-and-follow-vertically)
 (global-set-key (kbd "C-c d") 'delete-window)
-(global-set-key (kbd "C-c k") 'kill-buffer-and-window)
+(global-set-key (kbd "C-c C-d") 'kill-buffer-and-window)
 (global-set-key (kbd "C-c <left>") 'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>") 'windmove-up)
