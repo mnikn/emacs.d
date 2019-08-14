@@ -49,6 +49,7 @@
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 1)
  '(company-show-numbers t)
+ '(flycheck-emacs-lisp-load-path (quote ("/root/.emacs.d/lisp")))
  '(package-selected-packages
 	 (quote
 		(company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
