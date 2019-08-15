@@ -22,6 +22,7 @@
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook #'lsp)
 
+(require-package 'format-all)
 
 (provide 'init-langs)
 

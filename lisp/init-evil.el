@@ -27,7 +27,8 @@
  "m" 'counsel-M-x
  "gs" 'magit-status
  "gl" 'magit-log-current
- "p" 'projectile-command-map)
+ "p" 'projectile-command-map
+ "cf" 'format-all-buffer)
 
 (provide 'init-evil)
 

@@ -34,6 +34,7 @@
 (require 'init-projectile)
 (require 'init-langs)
 (require 'init-ctags)
+(require 'init-utils)
 (require 'init-evil)
 
 ;; (require 'init-smex)
@@ -45,7 +46,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-auto-complete t)
- '(company-auto-complete-chars (quote (32 41 39)))
+ '(company-auto-complete-chars (quote (32)))
  '(company-dabbrev-downcase 2)
  '(company-dabbrev-minimum-length 4)
  '(company-idle-delay 0)
@@ -54,7 +55,7 @@
  '(flycheck-emacs-lisp-load-path (quote ("/root/.emacs.d/lisp")))
  '(package-selected-packages
 	 (quote
-		(company-lsp lsp-ui lsp-mode company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
+		(exec-path-from-shell format-all company-lsp lsp-ui lsp-mode company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
