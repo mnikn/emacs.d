@@ -46,7 +46,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-auto-complete t)
- '(company-auto-complete-chars (quote (32)))
+ '(company-auto-complete-chars nil)
+ '(company-dabbrev-code-everywhere t)
  '(company-dabbrev-downcase 2)
  '(company-dabbrev-minimum-length 4)
  '(company-idle-delay 0)
