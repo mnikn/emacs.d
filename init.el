@@ -10,6 +10,8 @@
 (package-initialize)
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
+(let ((default-directory "~/.emacs.d/site-lisp"))
+	(normal-top-level-add-subdirs-to-load-path))
 
 ;; editor
 (electric-pair-mode t)
@@ -35,6 +37,8 @@
 (require 'init-langs)
 (require 'init-ctags)
 (require 'init-utils)
+(require 'init-confluence)
+(require 'init-jira)
 (require 'init-evil)
 
 ;; (require 'init-smex)
@@ -45,6 +49,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(browse-url-browser-function (quote eww-browse-url))
  '(company-auto-complete t)
  '(company-auto-complete-chars nil)
  '(company-dabbrev-code-everywhere t)
@@ -54,9 +59,10 @@
  '(company-minimum-prefix-length 1)
  '(company-show-numbers t)
  '(flycheck-emacs-lisp-load-path (quote ("/root/.emacs.d/lisp")))
+ '(horizontal-scroll-bar-mode t)
  '(package-selected-packages
 	 (quote
-		(exec-path-from-shell format-all company-lsp lsp-ui lsp-mode company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
+		(org-jira exec-path-from-shell format-all company-lsp lsp-ui lsp-mode company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

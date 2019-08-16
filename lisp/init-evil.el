@@ -28,7 +28,10 @@
  "gs" 'magit-status
  "gl" 'magit-log-current
  "p" 'projectile-command-map
- "cf" 'format-all-buffer)
+ "cf" 'format-all-buffer
+ "ol" 'org-insert-link
+ "ot" 'org-todo)
+
 
 (provide 'init-evil)
 
