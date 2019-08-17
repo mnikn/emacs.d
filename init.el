@@ -20,6 +20,8 @@
 (setq create-lockfiles nil)
 (setq load-prefer-newer t)
 (setq ring-bell-function 'ignore)
+(setq inhibit-startup-screen t)
+(prefer-coding-system 'utf-8)
 (setq-default tab-width 2)
 (fset 'yes-or-no-p 'y-or-n-p)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
