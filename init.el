@@ -8,12 +8,6 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
-(defconst user-emacs-directory
-	(file-name-directory (or load-file-name (buffer-file-name))))
-(defconst user-cache-directory
-	(file-name-as-directory (concat user-emacs-directory ".cache")))
-(mkdir user-cache-directory t)
-
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (let ((default-directory "~/.emacs.d/site-lisp"))
 	(normal-top-level-add-subdirs-to-load-path))
@@ -49,6 +43,11 @@
 (require 'init-evil)
 
 ;; (require 'init-smex)
+
+(setq custom-file (concat user-emacs-directory "custom.el"))
+(if (not (file-exists-p custom-file))
+		(write-region "" nil custom-file))
+(load custom-file)
 
 
 (custom-set-variables
