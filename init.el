@@ -14,6 +14,12 @@
 
 ;; editor
 (electric-pair-mode t)
+
+(show-paren-mode t)
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match "#03a1fc")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+
 (global-auto-revert-mode t)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
