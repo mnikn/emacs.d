@@ -1,3 +1,7 @@
+;;; init-packages.el --- Package config -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
+
 (require 'package)
 
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -7,7 +11,7 @@
                          ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 
 (defun require-package (package &optional min-version no-refresh)
-  "Ask elpa to install given PACKAGE."
+  "Ask elpa to install given package."
   (cond
    ((package-installed-p package min-version)
     t)
@@ -17,4 +21,8 @@
     (package-refresh-contents)
     (require-package package min-version t))))
 
-(provide 'init-package)
+(package-initialize)
+
+(provide 'init-packages)
+
+;;; init-packages.el ends here

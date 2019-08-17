@@ -7,7 +7,12 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+
+(defconst user-emacs-directory
+	(file-name-directory (or load-file-name (buffer-file-name))))
+(defconst user-cache-directory
+	(file-name-as-directory (concat user-emacs-directory ".cache")))
+(mkdir user-cache-directory t)
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (let ((default-directory "~/.emacs.d/site-lisp"))
@@ -19,13 +24,14 @@
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 (setq create-lockfiles nil)
+(setq load-prefer-newer t)
 (setq ring-bell-function 'ignore)
 (setq-default tab-width 2)
 (fset 'yes-or-no-p 'y-or-n-p)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 
-(require 'init-package)
+(require 'init-packages)
 (require 'init-window)
 (require 'init-ivy)
 (require 'init-company)
