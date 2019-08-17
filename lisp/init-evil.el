@@ -34,8 +34,10 @@
  "oc" 'org-capture
  "od" 'org-archive-subtree
  "oa" 'org-agenda
+ "oi" 'org-insert-subheading
  "oss" 'org-schedule
  "osd" 'org-schedule
+ "or" 'org-refile
  "og" 'org-set-tags)
 
 (provide 'init-evil)
