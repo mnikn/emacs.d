@@ -21,8 +21,8 @@
  "<right>" 'windmove-right
  "<up>" 'windmove-up
  "<down>" 'windmove-down
- "wv" 'split-and-follow-vertically
- "wh" 'split-and-follow-horizontally
+ "w1" 'split-and-follow-vertically
+ "w2" 'split-and-follow-horizontally
  "wd" 'delete-window
  "m" 'counsel-M-x
  "gs" 'magit-status
@@ -30,8 +30,13 @@
  "p" 'projectile-command-map
  "cf" 'format-all-buffer
  "ol" 'org-insert-link
- "ot" 'org-todo)
-
+ "ot" 'org-todo
+ "oc" 'org-capture
+ "od" 'org-archive-subtree
+ "oa" 'org-agenda
+ "oss" 'org-schedule
+ "osd" 'org-schedule
+ "og" 'org-set-tags)
 
 (provide 'init-evil)
 

@@ -39,6 +39,7 @@
 (require 'init-utils)
 (require 'init-confluence)
 (require 'init-jira)
+(require 'init-org)
 (require 'init-evil)
 
 ;; (require 'init-smex)
@@ -58,8 +59,6 @@
  '(company-idle-delay 0)
  '(company-minimum-prefix-length 1)
  '(company-show-numbers t)
- '(flycheck-emacs-lisp-load-path (quote ("/root/.emacs.d/lisp")))
- '(horizontal-scroll-bar-mode t)
  '(package-selected-packages
 	 (quote
 		(org-jira exec-path-from-shell format-all company-lsp lsp-ui lsp-mode company-quickhelp company-help-mode tide js2-mode counsel-projectile treemacs-icons-dired treemacs-magit treemacs-projectile treemacs-evil treemacs projectile magit general evil smiles-mode smex))))
