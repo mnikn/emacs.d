@@ -6,13 +6,13 @@
 ;(exec-path-from-shell-initialize)
 
 ;; editor config
-(setq auto-save-default nil)
-(setq make-backup-files nil)
-(setq create-lockfiles nil)
-(setq-default load-prefer-newer t)
-(setq-default ring-bell-function 'ignore)
-(setq-default inhibit-startup-screen t)
-(setq-default initial-frame-alist '((fullscreen . maximized)))
+(setq-default auto-save-default nil
+	      make-backup-files nil
+	      create-lockfiles nil
+	      load-prefer-newer t
+	      ring-bell-function 'ignore
+	      inhibit-startup-screen t
+	      initial-frame-alist '((fullscreen . maximized)))
 ;(use-package recentf
 ;  :config
 ;  (setq-default recentf-max-menu-items 25)
