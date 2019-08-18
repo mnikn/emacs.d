@@ -9,14 +9,15 @@
 (general-define-key
  :states '(normal visual)
  :prefix "SPC"
- "s" 'swiper
+ "ss" 'sx-search
  "ff" 'find-file
  "fm" 'dired
  "hf" 'find-function
  "hv" 'find-variable
  "bs" 'switch-to-buffer
  "be" 'eval-buffer
- "bk" 'kill-buffer-and-window
+ "bw" 'kill-buffer-and-window
+ "bk" 'kill-buffer
  "<left>" 'windmove-left
  "<right>" 'windmove-right
  "<up>" 'windmove-up
@@ -25,12 +26,6 @@
  "w2" 'split-and-follow-horizontally
  "wd" 'delete-window
  "m" 'counsel-M-x
- "ns" 'eww-search-words
- "nb" 'eww-list-bookmarks
- "no" 'eww-bookmark-browse
- "nq" 'eww-back-url
- "ne" 'eww-forward-url
- "nn" 'eww
  "gs" 'magit-status
  "gl" 'magit-log-current
  "p" 'projectile-command-map
