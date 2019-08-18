@@ -20,38 +20,41 @@
   "Install packages if not exists."
   ;; (package-refresh-contents)
   (dolist (package package-list)
-    (if (not (package-installed-p package))
-	(message "install package: %s" package)
+    (when (not (package-installed-p package))
+      (message "install package: %s" package)
       (package-install package))))
 
 (package-initialize)
-(setq my-package-list '(use-package
-			 ;; emacs config
-			 ivy
-			 counsel
-			 swiper
-			 evil
-			 general
-			 monokai-theme
-			 hungry-delete
-			 ;; project mangement
-			 projectile
-			 counsel-projectile
-			 magit
-			 ;; editor
-			 company
-			 company-quickhelp
-			 format-all
-			 editorconfig
-			 yasnippet
-			 yasnippet-snippets
-			 ;; langs
-			 web-mode
-			 js2-mode
-			 tide
-			 ;; web
-			 sx
-			 ))
+(setq my-package-list '(
+			use-package
+			;; emacs config
+			ivy
+			counsel
+			swiper
+			exec-path-from-shell
+			evil
+			general
+			monokai-theme
+			hungry-delete
+			;; project mangement
+			projectile
+			counsel-projectile
+			magit
+			;; editor
+			company
+			company-quickhelp
+			format-all
+			editorconfig
+			yasnippet
+			yasnippet-snippets
+			;; langs
+			web-mode
+			js2-mode
+			nodejs-repl
+			tide
+			;; web
+			sx
+			))
 (setq-default package-archives '(("gnu"   . "https://elpa.emacs-china.org/gnu/")
 				 ("melpa" . "https://elpa.emacs-china.org/melpa/"))
 	      package-selected-packages my-package-list)

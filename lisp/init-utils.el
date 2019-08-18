@@ -24,6 +24,11 @@
   :config
   (global-hungry-delete-mode t))
 
+(use-package exec-path-from-shell
+  :config
+  (when (memq window-system '(mac ns))
+    (exec-path-from-shell-initialize)))
+
 ;; mode setting
 (global-auto-revert-mode t)
 (global-hl-line-mode t)

@@ -51,7 +51,16 @@
    "oss" 'org-schedule
    "osd" 'org-schedule
    "or" 'org-refile
-   "og" 'org-set-tags))
+   "og" 'org-set-tags)
+
+  (general-evil-setup)
+  (general-nmap
+    :prefix "SPC"
+    :keymaps 'js2-mode-map "cc" 'nodejs-repl-send-buffer)
+  (general-nmap
+    :prefix "SPC"
+    :keymaps 'tide-mode-map "cj" 'tide-jump-to-definition))
+
 
 (provide 'init-evil)
 
