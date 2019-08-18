@@ -52,6 +52,7 @@
 			js2-mode
 			nodejs-repl
 			tide
+			go-mode
 			;; web
 			sx
 			))

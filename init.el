@@ -25,6 +25,7 @@
 (require 'init-projectile)
 (require 'init-langs)
 (require 'init-lisp)
+(require 'init-go)
 (require 'init-frontend)
 (require 'init-ctags)
 ;;(require 'init-confluence)
