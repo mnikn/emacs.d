@@ -14,6 +14,7 @@
 
 (require 'init-packages)
 (require 'init-evil)
+(require 'init-git)
 (require 'init-utils)
 (require 'init-window)
 (require 'init-ivy)
@@ -21,7 +22,6 @@
 (require 'init-flycheck)
 (require 'init-theme)
 (require 'init-yasnippet)
-(require 'init-git)
 (require 'init-projectile)
 (require 'init-langs)
 (require 'init-lisp)
