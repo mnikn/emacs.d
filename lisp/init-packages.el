@@ -4,11 +4,12 @@
 
 (require 'package)
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+(setq package-archives '(("melpa" . "http://elpa.emacs-china.org/melpa/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
 			 ;; ("melpa" . "http://melpa.milkbox.net/packages/")
-                         ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+                         ))
 
 (defun require-package (package &optional min-version no-refresh)
   "Ask elpa to install given package."
@@ -22,6 +23,13 @@
     (require-package package min-version t))))
 
 (package-initialize)
+
+(require-package 'use-package)
+(eval-when-compile
+	(add-to-list 'load-path (concat user-emacs-directory "elpa"))
+  ;(add-to-list 'load-path "<path where use-package is installed>")
+  (require 'use-package))
+
 
 (provide 'init-packages)
 
