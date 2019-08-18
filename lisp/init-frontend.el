@@ -12,9 +12,6 @@
   :hook ((typescript-mode . tide-setup)))
 
 (add-hook 'js2-mode-hook 'tide-setup)
-				 ;(js2-mode . tide-setup)
-         ;(typescript-mode . tide-hl-identifier-mode)
-																				;(before-save . tide-format-before-save))
 
 (use-package web-mode
 	:ensure t
@@ -29,8 +26,9 @@
                (string-match "\\.tsx$" buffer-file-name))
       (tide-setup)))
 	(defun my/jsx-setup ()
-		(when (and (strinp buffer-file-name)
+		(when (and (stringp buffer-file-name)
 							 (string-match "\\.jsx$" buffer-file-name))
+			(flycheck-add-mode 'javascript-eslint 'web-mode)
 			(js2-mode)))
   (add-hook 'web-mode-hook 'my/tsx-setup)
 	(add-hook 'web-mode-hook 'my/jsx-setup))
