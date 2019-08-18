@@ -9,8 +9,8 @@
 ;; You may delete these explanatory comments.
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(let ((default-directory "~/.emacs.d/site-lisp"))
-	(normal-top-level-add-subdirs-to-load-path))
+;(let ((default-directory "~/.emacs.d/site-lisp"))
+;	(normal-top-level-add-subdirs-to-load-path))
 
 ;; editor
 (electric-pair-mode t)
@@ -35,6 +35,7 @@
 
 (require 'init-packages)
 (require 'init-window)
+(require 'init-evil)
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-flycheck)
@@ -46,11 +47,10 @@
 (require 'init-frontend)
 (require 'init-ctags)
 (require 'init-utils)
-(require 'init-confluence)
-(require 'init-jira)
+;(require 'init-confluence)
+;(require 'init-jira)
 (require 'init-org)
 (require 'init-browser)
-(require 'init-evil)
 
 ;; (require 'init-smex)
 

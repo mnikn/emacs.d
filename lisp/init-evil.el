@@ -26,6 +26,10 @@
  "wd" 'delete-window
  "m" 'counsel-M-x
  "ns" 'eww-search-words
+ "nb" 'eww-list-bookmarks
+ "no" 'eww-bookmark-browse
+ "nq" 'eww-back-url
+ "ne" 'eww-forward-url
  "nn" 'eww
  "gs" 'magit-status
  "gl" 'magit-log-current
