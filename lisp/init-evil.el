@@ -61,12 +61,12 @@
     "<down>" 'windmove-down
     "bw" 'kill-buffer-and-window)
 
-  (general-nmap
-    :prefix "SPC"
-    :keymaps 'js2-mode-map "cc" 'nodejs-repl-send-buffer)
-  (general-nmap
-    :prefix "SPC"
-    :keymaps 'tide-mode-map "cj" 'tide-jump-to-definition))
+  (space-leader-def
+    :keymaps 'js2-mode-map
+    "cc" 'nodejs-repl-send-buffer)
+  (space-leader-def
+    :keymaps 'tide-mode-map
+    "cj" 'tide-jump-to-definition))
 
 
 (provide 'init-evil)
