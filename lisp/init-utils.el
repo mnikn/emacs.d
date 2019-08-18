@@ -29,6 +29,10 @@
   (when (memq window-system '(mac ns))
     (exec-path-from-shell-initialize)))
 
+(use-package popwin
+  :config
+  (popwin-mode t))
+
 ;; mode setting
 (global-auto-revert-mode t)
 (global-hl-line-mode t)

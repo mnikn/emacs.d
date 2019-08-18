@@ -37,6 +37,7 @@
 			general
 			monokai-theme
 			hungry-delete
+			popwin
 			;; project mangement
 			projectile
 			counsel-projectile
