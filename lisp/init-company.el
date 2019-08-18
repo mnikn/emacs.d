@@ -8,14 +8,14 @@
 (add-hook 'org-mode-hook '(lambda () (company-mode -1)))
 
 
-(setq company-auto-complete t)
-(setq company-auto-complete-chars nil)
-(setq company-dabbrev-code-everywhere t)
-(setq company-dabbrev-downcase 2)
-(setq company-dabbrev-minimum-length 4)
-(setq company-idle-delay 0)
-(setq company-minimum-prefix-length 1)
-(setq company-show-numbers t)
+(setq-default company-auto-complete t)
+(setq-default company-auto-complete-chars nil)
+(setq-default company-dabbrev-code-everywhere t)
+(setq-default company-dabbrev-downcase 2)
+(setq-default company-dabbrev-minimum-length 1)
+(setq-default company-idle-delay 0)
+(setq-default company-minimum-prefix-length 1)
+(setq-default company-show-numbers t)
 (global-company-mode t)
 
 (company-quickhelp-mode)
