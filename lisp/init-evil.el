@@ -21,8 +21,8 @@
    "fm" 'dired
    "fc" 'open-config-file
    "fr" 'recentf-open-files
-   "hf" 'find-function
-   "hv" 'find-variable
+   "hf" 'counsel-describe-function
+   "hv" 'counsel-describe-variable
    "hk" 'describe-key
    "hm" 'describe-mode
    "bs" 'switch-to-buffer
