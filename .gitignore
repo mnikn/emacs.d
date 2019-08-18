@@ -11,4 +11,5 @@ bookmarks
 /projectile.cache
 /.lsp-session-v1
 /request
+/url
 custom.el

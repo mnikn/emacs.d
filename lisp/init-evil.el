@@ -25,6 +25,8 @@
  "w2" 'split-and-follow-horizontally
  "wd" 'delete-window
  "m" 'counsel-M-x
+ "ns" 'eww-search-words
+ "nn" 'eww
  "gs" 'magit-status
  "gl" 'magit-log-current
  "p" 'projectile-command-map
