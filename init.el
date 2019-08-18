@@ -42,7 +42,7 @@
 (require 'init-yasnippet)
 (require 'init-git)
 (require 'init-projectile)
-;(require 'init-langs)
+(require 'init-langs)
 (require 'init-frontend)
 (require 'init-ctags)
 (require 'init-utils)
