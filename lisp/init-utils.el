@@ -13,12 +13,6 @@
 	      ring-bell-function 'ignore
 	      inhibit-startup-screen t
 	      initial-frame-alist '((fullscreen . maximized)))
-;(use-package recentf
-;  :config
-;  (setq-default recentf-max-menu-items 25)
-;  (recentf-mode 1)
-;  :general
-;  (general-nmap "SPC f r" 'recentf-open-files))
 
 (use-package recentf
   :config
@@ -26,6 +20,9 @@
         recentf-max-menu-items 15)
   (recentf-mode t))
 
+(use-package hungry-delete
+  :config
+  (global-hungry-delete-mode t))
 
 ;; mode setting
 (global-auto-revert-mode t)

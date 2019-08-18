@@ -18,11 +18,11 @@
 
 (defun install-packages (package-list)
   "Install packages if not exists."
-  (package-refresh-contents)
+  ;; (package-refresh-contents)
   (dolist (package package-list)
     (if (not (package-installed-p package))
-	(package-install package))))
-
+	(message "install package: %s" package)
+      (package-install package))))
 
 (package-initialize)
 (setq my-package-list '(use-package
@@ -33,6 +33,7 @@
 			 evil
 			 general
 			 monokai-theme
+			 hungry-delete
 			 ;; project mangement
 			 projectile
 			 counsel-projectile
@@ -51,12 +52,10 @@
 			 ;; web
 			 sx
 			 ))
-(install-packages my-package-list)
 (setq-default package-archives '(("gnu"   . "https://elpa.emacs-china.org/gnu/")
 				 ("melpa" . "https://elpa.emacs-china.org/melpa/"))
 	      package-selected-packages my-package-list)
-
-					;(require-package 'use-package)
+(install-packages my-package-list)
 (eval-when-compile
   (add-to-list 'load-path (concat user-emacs-directory "elpa"))
   (require 'use-package))
