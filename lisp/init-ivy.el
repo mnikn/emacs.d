@@ -8,8 +8,9 @@
 ;; (setq ivy-use-virtual-buffers t)
 ;; (setq enable-recursive-minibuffers t)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
-(setq-default ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
-(setq-default ivy-initial-inputs-alist nil)
+(setq ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
+(setq ivy-initial-inputs-alist nil)
+;(setq-default ivy-initial-inputs-alist nil)
 
 ;; counsel, enhance ivy commands
 (require-package 'counsel)
