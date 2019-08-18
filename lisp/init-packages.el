@@ -32,7 +32,7 @@
 			 swiper
 			 evil
 			 general
-			 zenburn-theme
+			 monokai-theme
 			 ;; project mangement
 			 projectile
 			 counsel-projectile
@@ -51,6 +51,7 @@
 			 ;; web
 			 sx
 			 ))
+(install-packages my-package-list)
 (setq-default package-archives '(("gnu"   . "https://elpa.emacs-china.org/gnu/")
 				 ("melpa" . "https://elpa.emacs-china.org/melpa/"))
 	      package-selected-packages my-package-list)

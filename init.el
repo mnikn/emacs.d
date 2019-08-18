@@ -12,7 +12,6 @@
 ;;(let ((default-directory "~/.emacs.d/site-lisp"))
 ;;	(normal-top-level-add-subdirs-to-load-path))
 
-
 (require 'init-packages)
 (require 'init-evil)
 (require 'init-utils)

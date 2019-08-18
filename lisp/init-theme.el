@@ -1,9 +1,10 @@
 ;;; init-theme.el --- Theme config
 ;;; Commentary:
 ;;; Code:
-(require-package 'zenburn-theme)
 
-(load-theme 'zenburn t)
+(use-package monokai-theme
+  :config
+  (load-theme 'monokai t))
 
 (provide 'init-theme)
 ;;; init-theme.el ends here
