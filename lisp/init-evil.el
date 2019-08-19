@@ -25,6 +25,7 @@
     :prefix "SPC"
     :states '(normal visual))
   (space-leader-def
+    "=" 'er/expand-region
     "ss" 'sx-search
     "ff" 'find-file
     "fm" 'dired-jump

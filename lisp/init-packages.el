@@ -49,6 +49,7 @@
 			yasnippet-snippets
 			diff-hl
 			evil-nerd-commenter
+			expand-region
 			;; langs
 			web-mode
 			js2-mode
