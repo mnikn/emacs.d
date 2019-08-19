@@ -48,6 +48,7 @@
     "cf" 'indent-region
     "cc" 'evilnc-comment-or-uncomment-lines
     "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
+    "cs" 'swiper
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
