@@ -9,7 +9,7 @@
 ;; (setq enable-recursive-minibuffers t)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 ;(setq ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
-(setq-default ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
+(setq-default ivy-re-builders-alist '((t . ivy--regex-plus)))
 (setq-default ivy-initial-inputs-alist '(
 				(org-refile . "^")
 				(org-agenda-refile . "^")

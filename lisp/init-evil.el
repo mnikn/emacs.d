@@ -31,7 +31,8 @@
   (space-leader-def
     "=" 'er/expand-region
     "-" 'iedit-mode
-    "ss" 'sx-search
+    "s" 'counsel-projectile-ag
+    "?" 'sx-search
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
