@@ -21,13 +21,9 @@
 				("WAITING" :foreground "orange" :weight bold)
 				("HOLD" :foreground "magenta" :weight bold)
 				("CANCELED" :foreground "forest green" :weight bold)))
-(setq org-capture-templates '(("t"
-			       "Todo item"
-			       entry (file org-default-notes-file)
-			       "* TODO %?\n%U\n"
-			       :clock-in t
-			       :clock-resume t)
-			      ))
+(setq org-capture-templates '(
+			      ("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n%U\n" :clock-in t :clock-resume t)
+			      ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")))
 (provide 'init-org)
 
 ;;; init-org.el ends here
