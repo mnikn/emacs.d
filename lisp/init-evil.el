@@ -17,6 +17,8 @@
   (evil-mode t))
 
 (use-package evil-nerd-commenter)
+(use-package expand-region)
+(use-package iedit)
 
 (use-package general
   :config
@@ -26,6 +28,7 @@
     :states '(normal visual))
   (space-leader-def
     "=" 'er/expand-region
+    "-" 'iedit-mode
     "ss" 'sx-search
     "ff" 'find-file
     "fm" 'dired-jump

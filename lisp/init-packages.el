@@ -50,6 +50,7 @@
 			diff-hl
 			evil-nerd-commenter
 			expand-region
+			iedit
 			;; langs
 			web-mode
 			js2-mode
