@@ -58,8 +58,8 @@
 			;; web
 			sx
 			))
-(setq-default package-archives '(("gnu"   . "https://elpa.emacs-china.org/gnu/")
-				 ("melpa" . "https://elpa.emacs-china.org/melpa/"))
+(setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+				 ("melpa" . "http://elpa.emacs-china.org/melpa/"))
 	      package-selected-packages my-package-list)
 (install-packages my-package-list)
 (eval-when-compile

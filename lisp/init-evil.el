@@ -50,7 +50,7 @@
     "oa" 'org-agenda
     "oi" 'org-insert-subheading
     "oss" 'org-schedule
-    "osd" 'org-schedule
+    "osd" 'org-deadline
     "or" 'org-refile
     "og" 'org-set-tags)
   (space-leader-def
@@ -59,7 +59,8 @@
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
-    "bw" 'kill-buffer-and-window)
+    "bw" 'kill-buffer-and-window
+    "m" 'counsel-M-x)
 
   (space-leader-def
     :keymaps 'js2-mode-map

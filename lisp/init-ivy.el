@@ -8,8 +8,19 @@
 ;; (setq ivy-use-virtual-buffers t)
 ;; (setq enable-recursive-minibuffers t)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
-(setq ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
-(setq ivy-initial-inputs-alist nil)
+;(setq ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
+(setq-default ivy-re-builders-alist '((t . ivy--regex-fuzzy)))
+(setq-default ivy-initial-inputs-alist '(
+				(org-refile . "^")
+				(org-agenda-refile . "^")
+				(org-capture-refile . "^")
+				(counsel-M-x . "^")
+				(counsel-describe-function . "^")
+				(counsel-describe-variable . "^")
+				(counsel-org-capture . "^")
+				(Man-completion-table . "^")
+				(woman . "^")))
+
 ;(setq-default ivy-initial-inputs-alist nil)
 
 ;; counsel, enhance ivy commands
