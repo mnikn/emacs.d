@@ -20,6 +20,8 @@
 (use-package expand-region)
 (use-package iedit)
 
+(global-set-key (kbd "C-c =") 'er/expand-region)
+(global-set-key (kbd "C-c -") 'iedit-mode)
 (use-package general
   :config
   (general-evil-setup)
