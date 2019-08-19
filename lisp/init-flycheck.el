@@ -2,9 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(require-package 'flycheck)
-
-(global-flycheck-mode)
+(use-package flycheck
+  :config
+  (global-flycheck-mode t))
 
 (provide 'init-flycheck)
 
