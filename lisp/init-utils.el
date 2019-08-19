@@ -39,6 +39,7 @@
 
 ;; mode setting
 (global-auto-revert-mode t)
+(electric-indent-mode t)
 (global-hl-line-mode t)
 (global-linum-mode t)
 (tool-bar-mode -1)

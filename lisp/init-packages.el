@@ -49,7 +49,6 @@
 			;; editor
 			company
 			company-quickhelp
-			format-all
 			editorconfig
 			yasnippet
 			yasnippet-snippets

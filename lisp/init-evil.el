@@ -45,7 +45,7 @@
     "gs" 'magit-status
     "gl" 'magit-log-current
     "p" 'projectile-command-map
-    "cf" 'format-all-buffer
+    "cf" 'indent-region
     "cc" 'evilnc-comment-or-uncomment-lines
     "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
     "ol" 'org-insert-link
