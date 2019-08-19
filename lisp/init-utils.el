@@ -37,6 +37,12 @@
   :config
   (global-diff-hl-mode t))
 
+(use-package dired
+  :config
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+  (setq-default dired-dwim-target t))
+(use-package dired-x)
+
 ;; mode setting
 (global-auto-revert-mode t)
 (electric-indent-mode t)

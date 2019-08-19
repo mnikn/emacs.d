@@ -27,7 +27,7 @@
   (space-leader-def
     "ss" 'sx-search
     "ff" 'find-file
-    "fm" 'dired
+    "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
     "fo" 'mnikn/open-org-dir
     "fr" 'recentf-open-files
