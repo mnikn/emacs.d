@@ -33,6 +33,10 @@
   :config
   (popwin-mode t))
 
+(use-package diff-hl
+  :config
+  (global-diff-hl-mode t))
+
 ;; mode setting
 (global-auto-revert-mode t)
 (global-hl-line-mode t)

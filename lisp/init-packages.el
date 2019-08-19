@@ -49,6 +49,7 @@
 			editorconfig
 			yasnippet
 			yasnippet-snippets
+			diff-hl
 			;; langs
 			web-mode
 			js2-mode
