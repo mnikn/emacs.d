@@ -14,20 +14,20 @@
 (setq org-log-reschedule 'note)
 (setq org-log-into-drawer t)
 (setq org-todo-keywords '((sequence "TODO(t)" "IN PREOGRESS(i!)" "|" "DONE(d!)")
-											 (sequence "HOLD(h)" "WAITING(w@/!)" "|" "CANCELED(c@/!)")))
+			  (sequence "HOLD(h)" "WAITING(w@/!)" "|" "CANCELED(c@/!)")))
 (setq org-todo-keyword-faces  '(("TODO" :foreground "red" :weight bold)
-																("IN PREOGRESS" :foreground "blue" :weight bold)
-																("DONE" :foreground "forest green" :weight bold)
-																("WAITING" :foreground "orange" :weight bold)
-																("HOLD" :foreground "magenta" :weight bold)
-																("CANCELED" :foreground "forest green" :weight bold)))
+				("IN PREOGRESS" :foreground "blue" :weight bold)
+				("DONE" :foreground "forest green" :weight bold)
+				("WAITING" :foreground "orange" :weight bold)
+				("HOLD" :foreground "magenta" :weight bold)
+				("CANCELED" :foreground "forest green" :weight bold)))
 (setq org-capture-templates '(("t"
-															 "Todo item"
-															 entry (file org-default-notes-file)
-															 "* TODO %?\n%U\n"
-															 :clock-in t
-															 :clock-resume t)
-															))
+			       "Todo item"
+			       entry (file org-default-notes-file)
+			       "* TODO %?\n%U\n"
+			       :clock-in t
+			       :clock-resume t)
+			      ))
 (provide 'init-org)
 
 ;;; init-org.el ends here
