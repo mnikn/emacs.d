@@ -42,6 +42,7 @@
 (electric-indent-mode t)
 (global-hl-line-mode t)
 (global-linum-mode t)
+(savehist-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

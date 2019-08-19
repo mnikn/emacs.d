@@ -2,10 +2,15 @@
 ;;; Commentary:
 ;;; Code:
 
-(defun open-config-file ()
+(defun mnikn/open-config-file ()
   "Open emacs config file."
   (interactive)
   (find-file (concat user-emacs-directory "init.el")))
+
+(defun mnikn/open-org-dir ()
+  "Open org dir"
+  (interactive)
+  (counsel-find-file "~/OneDrive/org"))
 
 (use-package evil
   :config
@@ -23,7 +28,8 @@
     "ss" 'sx-search
     "ff" 'find-file
     "fm" 'dired
-    "fc" 'open-config-file
+    "fc" 'mnikn/open-config-file
+    "fo" 'mnikn/open-org-dir
     "fr" 'recentf-open-files
     "hf" 'counsel-describe-function
     "hv" 'counsel-describe-variable
