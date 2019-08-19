@@ -10,6 +10,9 @@
 (use-package evil
   :config
   (evil-mode t))
+
+(use-package evil-nerd-commenter)
+
 (use-package general
   :config
   (general-evil-setup)
@@ -43,6 +46,8 @@
     "gl" 'magit-log-current
     "p" 'projectile-command-map
     "cf" 'format-all-buffer
+    "cc" 'evilnc-comment-or-uncomment-lines
+    "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
@@ -64,7 +69,7 @@
 
   (space-leader-def
     :keymaps 'js2-mode-map
-    "cc" 'nodejs-repl-send-buffer)
+    "cr" 'nodejs-repl-send-buffer)
   (space-leader-def
     :keymaps 'tide-mode-map
     "cj" 'tide-jump-to-definition))

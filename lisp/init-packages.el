@@ -50,6 +50,7 @@
 			yasnippet
 			yasnippet-snippets
 			diff-hl
+			evil-nerd-commenter
 			;; langs
 			web-mode
 			js2-mode
