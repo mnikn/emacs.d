@@ -55,6 +55,7 @@
     "od" 'org-archive-subtree
     "oa" 'org-agenda
     "oi" 'org-insert-subheading
+    "op" 'org-set-property
     "oss" 'org-schedule
     "osd" 'org-deadline
     "or" 'org-refile
