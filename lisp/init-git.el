@@ -2,7 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(autoload 'magit "magit")
+(use-package magit
+  :commands magit)
 
 (provide 'init-git)
 
