@@ -5,11 +5,11 @@
 (use-package js2-mode
   :mode ("\\.js$" . js2-mode))
 
-(use-package tide
-  :after (typescript-mode company flycheck)
-  :hook ((typescript-mode . tide-setup)))
+;; (use-package tide
+  ;; :after (typescript-mode company flycheck)
+  ;; :hook ((typescript-mode . tide-setup)))
 
-(add-hook 'js2-mode-hook 'tide-setup)
+;; (add-hook 'js2-mode-hook 'tide-setup)
 
 (use-package json-mode
   :mode ("\\.json" . json-mode))
@@ -21,17 +21,19 @@
   ("\\.jsx". web-mode)
   ("\\.tsx". web-mode)
   :config
-  (defun my/tsx-setup ()
-    (when (and (stringp buffer-file-name)
-               (string-match "\\.tsx$" buffer-file-name))
-      (tide-setup)))
-  (defun my/jsx-setup ()
-    (when (and (stringp buffer-file-name)
-	       (string-match "\\.jsx$" buffer-file-name))
-      (flycheck-add-mode 'javascript-eslint 'web-mode)
-      (js2-mode)))
-  (add-hook 'web-mode-hook 'my/tsx-setup)
-  (add-hook 'web-mode-hook 'my/jsx-setup))
+  (setq-default web-mode-auto-close-style 2))
+  ;; :config
+  ;; (defun my/tsx-setup ()
+  ;;   (when (and (stringp buffer-file-name)
+  ;;              (string-match "\\.tsx$" buffer-file-name))
+  ;;     (tide-setup)))
+  ;; (defun my/jsx-setup ()
+  ;;   (when (and (stringp buffer-file-name)
+  ;; 	       (string-match "\\.jsx$" buffer-file-name))
+  ;;     (flycheck-add-mode 'javascript-eslint 'web-mode)
+  ;;     (js2-mode)))
+  ;; (add-hook 'web-mode-hook 'my/tsx-setup)
+  ;; (add-hook 'web-mode-hook 'my/jsx-setup))
 
 (provide 'init-frontend)
 

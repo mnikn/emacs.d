@@ -57,7 +57,7 @@
 			json-mode
 			js2-mode
 			nodejs-repl
-			tide
+			typescript-mode
 			go-mode
 			;; web
 			sx

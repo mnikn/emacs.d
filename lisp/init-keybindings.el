@@ -21,7 +21,7 @@
     "[" 'split-and-follow-vertically
     "]" 'split-and-follow-horizontally
     "\\" 'counsel-projectile-find-file
-    "RET" 'indent-region
+    "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
     "s" 'counsel-projectile-ag

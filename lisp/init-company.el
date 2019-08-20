@@ -18,13 +18,6 @@
 		company-show-numbers t))
 (use-package company-quickhelp
   :hook (company-mode . company-quickhelp-mode))
-;; (add-hook 'after-init-hook 'global-company-mode)
-;; (add-hook 'org-mode-hook '(lambda () (company-mode -1)))
-
-
-;; (global-company-mode t)
-
-;; (company-quickhelp-mode)
 
 
 (provide 'init-company)
