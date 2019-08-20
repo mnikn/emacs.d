@@ -14,7 +14,7 @@
 (setq org-log-reschedule 'note)
 (setq org-log-into-drawer t)
 (setq org-todo-keywords '((sequence "TODO(t)" "IN PREOGRESS(i!)" "|" "DONE(d!)")
-			  (sequence "HOLD(h)" "WAITING(w@/!)" "|" "CANCELED(c@/!)")))
+			  (sequence "HOLD(h!)" "WAITING(w@/!)" "|" "CANCELED(c@/!)")))
 (setq org-todo-keyword-faces  '(("TODO" :foreground "red" :weight bold)
 				("IN PREOGRESS" :foreground "blue" :weight bold)
 				("DONE" :foreground "forest green" :weight bold)
