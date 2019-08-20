@@ -32,7 +32,6 @@
 			swiper
 			exec-path-from-shell
 			evil
-			evil-magit
 			general
 			monokai-theme
 			hungry-delete

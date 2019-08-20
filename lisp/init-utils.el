@@ -41,15 +41,15 @@
   :config
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
   (setq-default dired-dwim-target t))
-(use-package dired-x)
+(put 'dired-find-alternate-file 'disabled nil)
 
 (use-package which-key
   :config
   (which-key-mode t))
 
-(use-package powerline
-  :config
-  (powerline-center-evil-theme))
+;; (use-package powerline
+;;   :config
+;;   (powerline-center-evil-theme))
 
 ;; mode setting
 (global-auto-revert-mode t)

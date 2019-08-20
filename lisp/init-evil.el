@@ -16,9 +16,9 @@
   :config
   (evil-mode t))
 
-(use-package evil-nerd-commenter)
-(use-package expand-region)
-(use-package iedit)
+;; (dolist (mode '(flycheck-error-list-mode
+;; 		occur-mode))
+;;   (add-to-list 'evil-emacs-state-modes mode))
 
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c -") 'iedit-mode)
@@ -33,7 +33,10 @@
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
-    "s" 'counsel-projectile-ag
+    "[" 'split-and-follow-vertically
+    "]" 'split-and-follow-horizontally
+    "\\" 'counsel-projectile-find-file
+    "SPC" 'switch-to-buffer
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
@@ -51,13 +54,11 @@
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
-    "w1" 'split-and-follow-vertically
-    "w2" 'split-and-follow-horizontally
-    "w3" 'delete-window
+    "wv" 'split-and-follow-vertically
+    "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
     "m" 'counsel-M-x
-    "gs" 'magit-status
-    "gl" 'magit-log-current
+    "g" 'magit
     "p" 'projectile-command-map
     "cf" 'indent-region
     "cs" 'swiper

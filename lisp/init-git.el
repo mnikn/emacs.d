@@ -2,11 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package magit)
-(use-package evil-magit
-  :config
-  (evil-define-key* evil-magit-state magit-mode-map "SPC" nil)
-  (evil-define-key* evil-magit-state magit-mode-map [escape] nil))
+(autoload 'magit "magit")
 
 (provide 'init-git)
 
