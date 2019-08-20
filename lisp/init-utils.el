@@ -43,6 +43,10 @@
   (setq-default dired-dwim-target t))
 (use-package dired-x)
 
+(use-package which-key
+  :config
+  (which-key-mode t))
+
 ;; mode setting
 (global-auto-revert-mode t)
 (electric-indent-mode t)
