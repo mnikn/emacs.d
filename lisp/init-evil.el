@@ -33,6 +33,7 @@
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
+    "s" 'counsel-projectile-ag
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
@@ -58,7 +59,6 @@
     "gs" 'magit-status
     "gl" 'magit-log-current
     "p" 'projectile-command-map
-    "ps" 'counsel-projectile-ag
     "cf" 'indent-region
     "cs" 'swiper
     "ol" 'org-insert-link

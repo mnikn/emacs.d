@@ -18,8 +18,8 @@
 
 (defun install-packages (package-list)
   "Install packages if not exists."
-  (package-refresh-contents)
   (dolist (package package-list)
+    ;; (package-refresh-contents)
     (when (not (package-installed-p package))
       (message "install package: %s" package)
       (package-install package))))
@@ -38,6 +38,7 @@
 			hungry-delete
 			popwin
 			which-key
+			powerline
 			;; project mangement
 			projectile
 			counsel-projectile

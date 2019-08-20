@@ -47,6 +47,10 @@
   :config
   (which-key-mode t))
 
+(use-package powerline
+  :config
+  (powerline-center-evil-theme))
+
 ;; mode setting
 (global-auto-revert-mode t)
 (electric-indent-mode t)
