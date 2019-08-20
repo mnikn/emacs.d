@@ -31,7 +31,7 @@
   (space-leader-def
     "=" 'er/expand-region
     "-" 'iedit-mode
-    "s" 'counsel-projectile-ag
+    "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
     "ff" 'find-file
     "fm" 'dired-jump
@@ -42,7 +42,7 @@
     "hv" 'counsel-describe-variable
     "hk" 'describe-key
     "hm" 'describe-mode
-    "bs" 'switch-to-buffer
+    "bb" 'switch-to-buffer
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
@@ -58,9 +58,8 @@
     "gs" 'magit-status
     "gl" 'magit-log-current
     "p" 'projectile-command-map
+    "ps" 'counsel-projectile-ag
     "cf" 'indent-region
-    "cc" 'evilnc-comment-or-uncomment-lines
-    "cl" 'evilnc-quick-comment-or-uncomment-to-the-line
     "cs" 'swiper
     "ol" 'org-insert-link
     "ot" 'org-todo
@@ -87,7 +86,6 @@
   (space-leader-def
     :keymaps 'tide-mode-map
     "cj" 'tide-jump-to-definition))
-
 
 (provide 'init-evil)
 
