@@ -36,6 +36,7 @@
     "[" 'split-and-follow-vertically
     "]" 'split-and-follow-horizontally
     "\\" 'counsel-projectile-find-file
+    "RET" 'indent-region
     "SPC" 'switch-to-buffer
     "s" 'counsel-projectile-ag
     "ff" 'find-file
@@ -61,7 +62,6 @@
     "m" 'counsel-M-x
     "g" 'magit
     "p" 'projectile-command-map
-    "cf" 'indent-region
     "cs" 'swiper
     "ol" 'org-insert-link
     "ot" 'org-todo
