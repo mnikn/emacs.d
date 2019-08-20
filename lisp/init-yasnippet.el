@@ -2,12 +2,12 @@
 ;;; Code:
 ;;; Commentary:
 
-(setq yas-snippet-dirs '("~/.emacs/snippets"))
 (use-package yasnippet
   :config
-  (add-hook 'prog-mode-hook #'yas-minor-mode))
+  (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
+  (add-hook 'prog-mode-hook #'yas-minor-mode)
+  (yas-global-mode t))
 (use-package yasnippet-snippets)
-
 
 (provide 'init-yasnippet)
 ;;; init-yasnippet.el ends here
