@@ -54,6 +54,7 @@
 			iedit
 			;; langs
 			web-mode
+			json-mode
 			js2-mode
 			nodejs-repl
 			tide

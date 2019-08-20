@@ -37,6 +37,7 @@
     "]" 'split-and-follow-horizontally
     "\\" 'counsel-projectile-find-file
     "SPC" 'switch-to-buffer
+    "s" 'counsel-projectile-ag
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file

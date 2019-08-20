@@ -11,6 +11,9 @@
 
 (add-hook 'js2-mode-hook 'tide-setup)
 
+(use-package json-mode
+  :mode ("\\.json" . json-mode))
+
 (use-package web-mode
   :mode
   ("\\.html". web-mode)
