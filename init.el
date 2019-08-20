@@ -20,9 +20,9 @@
 ;;	(normal-top-level-add-subdirs-to-load-path))
 
 (require 'init-packages)
+(require 'init-utils)
 (require 'init-evil)
 (require 'init-git)
-(require 'init-utils)
 (require 'init-window)
 (require 'init-ivy)
 (require 'init-company)
@@ -39,6 +39,7 @@
 ;;(require 'init-jira)
 (require 'init-org)
 (require 'init-browser)
+(require 'init-keybindings)
 
 ;; (require 'init-smex)
 

@@ -5,6 +5,16 @@
 ;(require-package 'exec-path-from-shell)
 ;(exec-path-from-shell-initialize)
 
+(defun mnikn/open-config-file ()
+  "Open emacs config file."
+  (interactive)
+  (find-file (concat user-emacs-directory "init.el")))
+
+(defun mnikn/open-org-dir ()
+  "Open org dir"
+  (interactive)
+  (counsel-find-file "~/OneDrive/org"))
+
 ;; editor config
 (setq-default auto-save-default nil
 	      make-backup-files nil
@@ -61,10 +71,6 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (fset 'yes-or-no-p 'y-or-n-p)
-
-;; keybind
-(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
-(global-set-key (kbd "<backtab>") 'switch-to-buffer)
 
 (provide 'init-utils)
 
