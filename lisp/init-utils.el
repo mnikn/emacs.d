@@ -68,7 +68,7 @@
 (scroll-bar-mode -1)
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(set-face-attribute 'region nil :background "#666")
+(set-face-attribute 'region nil :background "#034efc")
 
 (provide 'init-utils)
 
