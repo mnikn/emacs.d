@@ -14,6 +14,12 @@
   :config
   (global-diff-hl-mode t))
 
+(use-package ivy
+  :config
+  (setq-default ivy-use-virtual-buffers t
+		ivy-re-builders-alist '((t . ivy--regex-plus)))
+  (ivy-mode t))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

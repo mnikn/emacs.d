@@ -5,9 +5,16 @@
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c -") 'iedit-mode)
-(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+(global-set-key (kbd "C-s") 'swiper)
+
+;; emacs
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f") 'counsel-describe-function)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
+(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 ;; windows
 (global-set-key (kbd "C-c h") 'split-and-follow-horizontally)
