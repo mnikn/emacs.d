@@ -37,7 +37,6 @@
 			hungry-delete
 			popwin
 			which-key
-			powerline
 			wgrep
 			;; project mangement
 			projectile
