@@ -4,9 +4,10 @@
 
 (global-set-key (kbd "C-c c") 'org-capture)
 
+(setq org-english-words-file "~/OneDrive/org/english_words.org")
 (setq-default
  org-default-notes-file "~/OneDrive/org/refile.org"
- org-agenda-files '("~/OneDrive/org/todo.org")
+ org-agenda-files '("~/OneDrive/org/todo.org" "~/OneDrive/org/notes.org")
  org-startup-indented t
  org-refile-use-outline-path 'file
  org-refile-targets '((org-agenda-files :level . 1))
@@ -23,7 +24,8 @@
 			   ("HOLD" :foreground "magenta" :weight bold)
 			   ("CANCELED" :foreground "forest green" :weight bold))
  org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n%U\n" :clock-in t :clock-resume t)
-			 ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:TITLE: %i\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")))
+			 ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:TITLE: %i\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")
+			 ("e" "English words" entry (file+headline org-english-words-file "Words") "* %i\n** Meanings\n** Sample\n")))
 (provide 'init-org)
 
 ;;; init-org.el ends here
