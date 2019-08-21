@@ -2,17 +2,18 @@
 ;;; Commentary:
 ;;; Code:
 
-(require-package 'projectile)
-(require-package 'counsel-projectile)
+(use-package projectile)
+(use-package counsel-projectile
+  :config
+  (counsel-projectile-mode t))
 
 
-(counsel-projectile-mode t)
 
-(require-package 'treemacs)
-(require-package 'treemacs-evil)
-(require-package 'treemacs-projectile)
-(require-package 'treemacs-magit)
-(require-package 'treemacs-icons-dired)
+(use-package treemacs)
+(use-package treemacs-evil)
+(use-package treemacs-projectile)
+(use-package treemacs-magit)
+(use-package treemacs-icons-dired)
 
 (provide 'init-projectile)
 
