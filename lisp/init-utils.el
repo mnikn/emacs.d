@@ -73,6 +73,8 @@
 (scroll-bar-mode -1)
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(set-face-attribute 'region nil :background "#666")
+
 (provide 'init-utils)
 
 ;;; init-utils.el ends here
