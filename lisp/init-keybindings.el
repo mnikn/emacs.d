@@ -6,6 +6,7 @@
 (global-set-key (kbd "C-c -") 'iedit-mode)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
+(global-set-key (kbd "C-c c") 'org-capture)
 
 (use-package general
   :config

@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 
-(global-set-key (kbd "C-c c") 'org-capture)
 
 (setq org-english-words-file "~/OneDrive/org/english_words.org")
 (setq-default

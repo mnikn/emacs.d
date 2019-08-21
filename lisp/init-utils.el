@@ -30,10 +30,6 @@
         recentf-max-menu-items 15)
   (recentf-mode t))
 
-(use-package hungry-delete
-  :config
-  (global-hungry-delete-mode t))
-
 (use-package exec-path-from-shell
   :config
   (when (memq window-system '(mac ns))
@@ -47,7 +43,6 @@
 
 ;; mode setting
 (global-auto-revert-mode t)
-(electric-indent-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
 
