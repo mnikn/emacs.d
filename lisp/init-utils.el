@@ -57,10 +57,10 @@
   :config
   (which-key-mode t))
 
-(use-package powerline
-  :config
-  (setq-default powerline-display-buffer-size nil)
-  (powerline-center-evil-theme))
+;; (use-package powerline
+;;   :config
+;;   (setq-default powerline-display-buffer-size nil)
+;;   (powerline-center-evil-theme))
 
 ;; mode setting
 (global-auto-revert-mode t)

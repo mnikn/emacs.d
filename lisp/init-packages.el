@@ -19,8 +19,8 @@
 (defun install-packages (package-list)
   "Install packages if not exists."
   (dolist (package package-list)
-    ;; (package-refresh-contents)
     (when (not (package-installed-p package))
+      (package-refresh-contents)
       (message "install package: %s" package)
       (package-install package))))
 
@@ -38,6 +38,7 @@
 			popwin
 			which-key
 			powerline
+			wgrep
 			;; project mangement
 			projectile
 			counsel-projectile
