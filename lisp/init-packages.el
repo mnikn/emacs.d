@@ -36,7 +36,6 @@
 			monokai-theme
 			hungry-delete
 			popwin
-			which-key
 			wgrep
 			;; project mangement
 			projectile

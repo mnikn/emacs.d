@@ -21,13 +21,13 @@
 
 (require 'init-packages)
 (require 'init-utils)
+(require 'init-ui)
 (require 'init-evil)
 (require 'init-git)
 (require 'init-window)
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-flycheck)
-(require 'init-theme)
 (require 'init-yasnippet)
 (require 'init-projectile)
 (require 'init-langs)
@@ -35,13 +35,9 @@
 (require 'init-go)
 (require 'init-frontend)
 (require 'init-ctags)
-;;(require 'init-confluence)
-;;(require 'init-jira)
 (require 'init-org)
 (require 'init-browser)
 (require 'init-keybindings)
-
-;; (require 'init-smex)
 
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (if (not (file-exists-p custom-file))
