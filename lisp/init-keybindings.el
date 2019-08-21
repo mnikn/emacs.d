@@ -2,11 +2,22 @@
 ;;; Commentary:
 ;;; Code:
 
+;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c -") 'iedit-mode)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
+
+;; windows
+(global-set-key (kbd "C-c h") 'split-and-follow-horizontally)
+(global-set-key (kbd "C-c v") 'split-and-follow-vertically)
+(global-set-key (kbd "C-c d") 'delete-window)
+(global-set-key (kbd "C-c C-d") 'kill-buffer-and-window)
+(global-set-key (kbd "C-c <left>") 'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>") 'windmove-up)
+(global-set-key (kbd "C-c <down>") 'windmove-down)
 
 (use-package general
   :config

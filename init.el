@@ -25,7 +25,6 @@
 (require 'init-editconfig)
 (require 'init-evil)
 (require 'init-git)
-(require 'init-window)
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-flycheck)

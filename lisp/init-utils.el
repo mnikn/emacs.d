@@ -2,8 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-;(require-package 'exec-path-from-shell)
-;(exec-path-from-shell-initialize)
+					;(require-package 'exec-path-from-shell)
+					;(exec-path-from-shell-initialize)
 
 (defun mnikn/open-config-file ()
   "Open emacs config file."
@@ -24,10 +24,26 @@
 	      inhibit-startup-screen t
 	      initial-frame-alist '((fullscreen . maximized)))
 
+(defun split-and-follow-horizontally ()
+  "Create horizontally window and switch."
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+
+(defun split-and-follow-vertically ()
+  "Create vertically window and switch."
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+
+
+
 (use-package recentf
   :config
   (setq-default recentf-save-file (expand-file-name "recentf" user-emacs-directory)
-        recentf-max-menu-items 15)
+		recentf-max-menu-items 15)
   (recentf-mode t))
 
 (use-package exec-path-from-shell

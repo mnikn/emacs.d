@@ -19,7 +19,7 @@
 (scroll-bar-mode -1)
 (global-hl-line-mode t)
 (global-linum-mode t)
-(set-face-attribute 'region nil :background "#034efc")
+(set-face-attribute 'region nil :background "#afb4ba")
 
 (provide 'init-ui)
 
