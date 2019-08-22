@@ -44,7 +44,11 @@
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
-    "s" 'counsel-projectile-ag
+    "sg" 'counsel-projectile-ag
+    "ss" 'swiper
+    "sl" 'dumb-jump-quick-look
+    "sj" 'dumb-jump-go
+    "sb" 'dumb-jump-back
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
@@ -68,9 +72,6 @@
     "m" 'counsel-M-x
     "g" 'magit
     "p" 'projectile-command-map
-    "cs" 'swiper
-    "cj" 'dumb-jump-go
-    "cb" 'dumb-jump-back
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
