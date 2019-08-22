@@ -69,6 +69,8 @@
     "g" 'magit
     "p" 'projectile-command-map
     "cs" 'swiper
+    "cj" 'dumb-jump-go
+    "cb" 'dumb-jump-back
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
@@ -83,10 +85,7 @@
 
   (space-leader-def
     :keymaps 'js2-mode-map
-    "cr" 'nodejs-repl-send-buffer)
-  (space-leader-def
-    :keymaps 'tide-mode-map
-    "cj" 'tide-jump-to-definition))
+    "cr" 'nodejs-repl-send-buffer))
 
 
 (provide 'init-keybindings)

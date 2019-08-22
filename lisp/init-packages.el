@@ -56,6 +56,7 @@
 			evil-nerd-commenter
 			expand-region
 			iedit
+			dumb-jump
 			;; langs
 			web-mode
 			json-mode

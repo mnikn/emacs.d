@@ -7,7 +7,9 @@
   :config
   (counsel-projectile-mode t))
 
-
+(use-package dumb-jump
+  :config
+  (dumb-jump-mode))
 
 (use-package treemacs)
 (use-package treemacs-evil)
