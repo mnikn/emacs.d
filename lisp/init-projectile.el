@@ -9,6 +9,7 @@
 
 (use-package dumb-jump
   :config
+  (setq-default dumb-jump-selector 'ivy)
   (dumb-jump-mode))
 
 (use-package treemacs)
