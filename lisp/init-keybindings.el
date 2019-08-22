@@ -6,6 +6,7 @@
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c -") 'iedit-mode)
 (global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "C-c y") 'company-yasnippet)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)
