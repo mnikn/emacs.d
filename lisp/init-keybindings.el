@@ -39,6 +39,7 @@
     "?" 'sx-search
     "[" 'split-and-follow-vertically
     "]" 'split-and-follow-horizontally
+    "." 'delete-indentation
     "\\" 'counsel-projectile-find-file
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
