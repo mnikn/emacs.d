@@ -7,6 +7,7 @@
 (setq-default
  org-default-notes-file "~/OneDrive/org/refile.org"
  org-agenda-files '("~/OneDrive/org/todo.org" "~/OneDrive/org/notes.org")
+ org-drawers '("PROPERTIES" "LOGBOOK")
  org-startup-indented t
  org-refile-use-outline-path 'file
  org-refile-targets '((org-agenda-files :level . 1))
@@ -14,6 +15,12 @@
  org-log-done 'time
  org-log-reschedule 'note
  org-log-into-drawer t
+ ;; clock
+ org-clock-out-when-done t
+ org-clock-in-resume t
+ org-clock-out-remove-zero-time-clocks t
+ org-clock-persist t
+ org-clock-report-include-clocking-task t
  org-todo-keywords '((sequence "TODO(t)" "IN PREOGRESS(i!)" "|" "DONE(d!)")
 		     (sequence "HOLD(h!)" "WAITING(w@/!)" "|" "CANCELED(c@/!)"))
  org-todo-keyword-faces  '(("TODO" :foreground "red" :weight bold)
@@ -22,7 +29,7 @@
 			   ("WAITING" :foreground "orange" :weight bold)
 			   ("HOLD" :foreground "magenta" :weight bold)
 			   ("CANCELED" :foreground "forest green" :weight bold))
- org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n%U\n" :clock-in t :clock-resume t)
+ org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n:PROPERTIES:\n:CREATED: %U\n:CATEGORY: %i\n" :clock-in t :clock-resume t)
 			 ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:TITLE: %i\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")
 			 ("e" "English words" entry (file+headline org-english-words-file "Words") "* %i\n** Meanings\n** Sample\n")))
 (provide 'init-org)
