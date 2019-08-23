@@ -57,6 +57,7 @@
 			expand-region
 			iedit
 			dumb-jump
+			aggressive-indent
 			;; langs
 			web-mode
 			json-mode

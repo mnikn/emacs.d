@@ -46,7 +46,7 @@
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
     "sg" 'counsel-projectile-ag
-    "ss" 'swiper
+    "ss" 'swiper-thing-at-point
     "sl" 'dumb-jump-quick-look
     "sj" 'dumb-jump-go
     "sb" 'dumb-jump-back
