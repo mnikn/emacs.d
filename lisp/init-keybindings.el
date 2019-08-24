@@ -48,7 +48,7 @@
     "sg" 'counsel-projectile-ag
     "ss" 'swiper-thing-at-point
     "sl" 'dumb-jump-quick-look
-    "sj" 'dumb-jump-go
+    "sj" 'counsel-etags-find-tag-at-point
     "sb" 'dumb-jump-back
     "ff" 'find-file
     "fm" 'dired-jump

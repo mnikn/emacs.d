@@ -60,6 +60,7 @@
 			iedit
 			dumb-jump
 			aggressive-indent
+			counsel-etags
 			;; langs
 			web-mode
 			json-mode
