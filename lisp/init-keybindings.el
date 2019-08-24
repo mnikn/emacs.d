@@ -63,6 +63,8 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
+    "es" 'er/expand-region
+    "ee" 'iedit-mode
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up

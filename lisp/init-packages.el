@@ -37,6 +37,7 @@
 			hungry-delete
 			popwin
 			wgrep
+			restart-emacs
 			;; project mangement
 			projectile
 			counsel-projectile
