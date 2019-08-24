@@ -31,7 +31,7 @@
 			   ("CANCELED" :foreground "forest green" :weight bold))
  org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n:PROPERTIES:\n:CREATED: %U\n:CATEGORY: %i\n" :clock-in t :clock-resume t)
 			 ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:TITLE: %i\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")
-			 ("e" "English words" entry (file+headline org-english-words-file "Words") "* %i\n** Meanings\n** Sample\n")))
+			 ("e" "English words" entry (file+headline org-english-words-file "Words") "* %?\n** Meanings\n** Sample\n")))
 (provide 'init-org)
 
 ;;; init-org.el ends here

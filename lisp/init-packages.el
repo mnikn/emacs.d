@@ -61,6 +61,7 @@
 			dumb-jump
 			aggressive-indent
 			counsel-etags
+			flycheck
 			;; langs
 			web-mode
 			json-mode
