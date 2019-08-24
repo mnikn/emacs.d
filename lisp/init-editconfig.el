@@ -20,6 +20,10 @@
 	    (lambda (props) (setq web-mode-block-padding 0)))
   (editorconfig-mode t))
 
+(use-package evil-matchit
+  :config
+  (global-evil-matchit-mode 1))
+
 
 (provide 'init-editconfig)
 

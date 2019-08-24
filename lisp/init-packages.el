@@ -54,6 +54,7 @@
 			yasnippet
 			yasnippet-snippets
 			diff-hl
+			evil-matchit
 			evil-nerd-commenter
 			expand-region
 			iedit
