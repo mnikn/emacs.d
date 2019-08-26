@@ -3,11 +3,12 @@
 ;;; Code:
 
 (use-package js2-mode
-  :mode ("\\.js$" . js2-mode))
+  :mode ("\\.js$" . js2-mode)
+  )
 
 ;; (use-package tide
-  ;; :after (typescript-mode company flycheck)
-  ;; :hook ((typescript-mode . tide-setup)))
+;; :after (typescript-mode company flycheck)
+;; :hook ((typescript-mode . tide-setup)))
 
 ;; (add-hook 'js2-mode-hook 'tide-setup)
 

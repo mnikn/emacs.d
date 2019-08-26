@@ -6,10 +6,6 @@
   :config
   (global-hungry-delete-mode t))
 
-(use-package aggressive-indent
-  :config
-  (global-aggressive-indent-mode t))
-
 (use-package editorconfig
   :config
   (add-hook 'editorconfig-hack-properties-functions

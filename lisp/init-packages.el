@@ -42,11 +42,6 @@
 			projectile
 			counsel-projectile
 			magit
-			treemacs
-			treemacs-evil
-			treemacs-projectile
-			treemacs-magit
-			treemacs-icons-dired
 			;; editor
 			company
 			company-quickhelp
@@ -59,7 +54,6 @@
 			expand-region
 			iedit
 			dumb-jump
-			aggressive-indent
 			counsel-etags
 			flycheck
 			;; langs
