@@ -46,7 +46,8 @@
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
     "sg" 'counsel-projectile-ag
-    "ss" 'swiper-thing-at-point
+    "ss" 'swiper
+    "sp" 'swiper-thing-at-point
     "sl" 'dumb-jump-quick-look
     "sj" 'counsel-etags-find-tag-at-point
     "sb" 'dumb-jump-back
