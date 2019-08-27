@@ -7,6 +7,8 @@
 (global-set-key (kbd "C-c -") 'iedit-mode)
 (global-set-key (kbd "C-s") 'swiper)
 (global-set-key (kbd "C-c y") 'company-yasnippet)
+(global-set-key (kbd "S-<up>") 'mnikn/evil-move-up)
+(global-set-key (kbd "S-<down>") 'mnikn/evil-move-down)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)

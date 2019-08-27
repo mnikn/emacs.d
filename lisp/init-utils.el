@@ -38,7 +38,15 @@
   (balance-windows)
   (other-window 1))
 
+(defun mnikn/evil-move-up ()
+  "Move 10 lines up"
+  (interactive)
+  (evil-previous-line 10))
 
+(defun mnikn/evil-move-down ()
+  "Move 10 lines down"
+  (interactive)
+  (evil-next-line 10))
 
 (use-package recentf
   :config
