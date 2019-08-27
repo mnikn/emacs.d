@@ -22,6 +22,10 @@
 
 (use-package neotree)
 
+(use-package golden-ratio
+  :config
+  (golden-ratio-mode 1))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

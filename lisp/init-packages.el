@@ -34,6 +34,7 @@
 			evil
 			general
 			monokai-theme
+			golden-ratio
 			hungry-delete
 			popwin
 			wgrep
