@@ -26,6 +26,11 @@
   :config
   (golden-ratio-mode 1))
 
+
+(use-package powerline
+  :config
+  (powerline-center-evil-theme))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

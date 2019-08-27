@@ -35,6 +35,7 @@
 			general
 			monokai-theme
 			golden-ratio
+			powerline
 			hungry-delete
 			popwin
 			wgrep
