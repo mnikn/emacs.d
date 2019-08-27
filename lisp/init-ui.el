@@ -20,6 +20,8 @@
 		ivy-re-builders-alist '((t . ivy--regex-plus)))
   (ivy-mode t))
 
+(use-package neotree)
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

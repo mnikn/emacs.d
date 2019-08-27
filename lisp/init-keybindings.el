@@ -52,7 +52,7 @@
     "sj" 'counsel-etags-find-tag-at-point
     "sb" 'dumb-jump-back
     "ff" 'find-file
-    "fm" 'dired-jump
+    "fm" 'neotree-dir
     "fc" 'mnikn/open-config-file
     "fo" 'mnikn/open-org-dir
     "fr" 'recentf-open-files

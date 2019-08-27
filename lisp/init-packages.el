@@ -42,6 +42,7 @@
 			projectile
 			counsel-projectile
 			magit
+			neotree
 			;; editor
 			company
 			company-quickhelp
