@@ -68,6 +68,7 @@
     "bk" 'kill-buffer
     "ee" 'er/expand-region
     "em" 'iedit-mode
+    "es" 'save-buffer
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up
