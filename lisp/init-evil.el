@@ -9,7 +9,7 @@
 (use-package evil-escape
   :config
   (setq-default
-    evil-escape-key-sequence "jk"
+    evil-escape-key-sequence "fd"
     evil-escape-delay 0.2)
   (evil-escape-mode t))
 
