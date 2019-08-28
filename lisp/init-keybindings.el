@@ -17,6 +17,7 @@
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
+(global-set-key (kbd "C-c p") 'eshell-previous-matching-input-from-input)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 ;; windows
