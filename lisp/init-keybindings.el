@@ -69,6 +69,7 @@
     "ee" 'er/expand-region
     "em" 'iedit-mode
     "es" 'save-buffer
+    "cc" 'flycheck-mode
     "jh" 'evil-first-non-blank
     "jl" 'evil-end-of-line
     "<left>" 'windmove-left
