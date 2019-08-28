@@ -39,6 +39,7 @@
     "=" 'er/expand-region
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
+    "," 'counsel-projectile-find-file
     "?" 'sx-search
     "[" 'split-and-follow-vertically
     "]" 'split-and-follow-horizontally
