@@ -69,6 +69,8 @@
     "ee" 'er/expand-region
     "em" 'iedit-mode
     "es" 'save-buffer
+    "jh" 'evil-first-non-blank
+    "jl" 'evil-end-of-line
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up
