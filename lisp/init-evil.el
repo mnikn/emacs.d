@@ -6,9 +6,12 @@
   :config
   (evil-mode t))
 
-;; (dolist (mode '(flycheck-error-list-mode
-;; 		occur-mode))
-;;   (add-to-list 'evil-emacs-state-modes mode))
+(use-package evil-escape
+  :config
+  (setq-default
+    evil-escape-key-sequence "jk"
+    evil-escape-delay 0.2)
+  (evil-escape-mode t))
 
 
 (provide 'init-evil)

@@ -43,7 +43,8 @@
     "[" 'split-and-follow-vertically
     "]" 'split-and-follow-horizontally
     "." 'delete-indentation
-    "\\" 'counsel-projectile-find-file
+    ";" 'evil-first-non-blank
+    "'" 'evil-end-of-line
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
@@ -70,8 +71,6 @@
     "em" 'iedit-mode
     "es" 'save-buffer
     "cc" 'flycheck-mode
-    "jh" 'evil-first-non-blank
-    "jl" 'evil-end-of-line
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up
@@ -82,6 +81,7 @@
     "m" 'counsel-M-x
     "g" 'magit
     "p" 'projectile-command-map
+    "n" 'projectile-command-map
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
