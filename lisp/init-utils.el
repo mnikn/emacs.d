@@ -15,15 +15,6 @@
   (interactive)
   (counsel-find-file "~/OneDrive/org"))
 
-;; editor config
-(setq-default auto-save-default nil
-	      make-backup-files nil
-	      create-lockfiles nil
-	      load-prefer-newer t
-	      ring-bell-function 'ignore
-	      inhibit-startup-screen t
-	      initial-frame-alist '((fullscreen . maximized)))
-
 (defun split-and-follow-horizontally ()
   "Create horizontally window and switch."
   (interactive)
@@ -47,27 +38,6 @@
   "Move 10 lines down"
   (interactive)
   (evil-next-line 10))
-
-(use-package recentf
-  :config
-  (setq-default recentf-save-file (expand-file-name "recentf" user-emacs-directory)
-		recentf-max-menu-items 15)
-  (recentf-mode t))
-
-(use-package exec-path-from-shell
-  :config
-  (when (memq window-system '(mac ns))
-    (exec-path-from-shell-initialize)))
-
-(use-package dired
-  :config
-  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
-  (setq-default dired-dwim-target t))
-(put 'dired-find-alternate-file 'disabled nil)
-
-;; mode setting
-(global-auto-revert-mode t)
-(fset 'yes-or-no-p 'y-or-n-p)
 
 
 (provide 'init-utils)

@@ -14,6 +14,7 @@
 
 (require 'init-packages)
 (require 'init-utils)
+(require 'init-emacs-config)
 (require 'init-ui)
 (require 'init-editconfig)
 (require 'init-evil)
