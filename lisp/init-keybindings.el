@@ -42,8 +42,6 @@
     "/" 'evilnc-comment-or-uncomment-lines
     "," 'counsel-projectile-find-file
     "?" 'sx-search
-    "[" 'split-and-follow-vertically
-    "]" 'split-and-follow-horizontally
     "." 'delete-indentation
     ";" 'evil-first-non-blank
     "'" 'evil-end-of-line
