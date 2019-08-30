@@ -66,12 +66,12 @@
     "hk" 'describe-key
     "hm" 'describe-mode
     "bb" 'switch-to-buffer
+    "bs" 'save-buffer
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
     "ee" 'er/expand-region
     "em" 'iedit-mode
-    "es" 'save-buffer
     "cc" 'flycheck-mode
     "<left>" 'windmove-left
     "<right>" 'windmove-right
