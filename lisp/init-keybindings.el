@@ -30,6 +30,11 @@
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <down>") 'windmove-down)
 
+(evil-define-key 'normal prog-mode-map "H" 'evil-first-non-blank)
+(evil-define-key 'normal prog-mode-map "L" 'evil-end-of-line)
+(evil-define-key 'normal prog-mode-map "=" 'er/expand-region)
+(setq-default evilmi-shortcut "m")
+
 (use-package general
   :config
   (general-evil-setup)
@@ -40,11 +45,7 @@
     "=" 'er/expand-region
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
-    "," 'counsel-projectile-find-file
     "?" 'sx-search
-    "." 'delete-indentation
-    ";" 'evil-first-non-blank
-    "'" 'evil-end-of-line
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
@@ -78,10 +79,8 @@
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
-    "m" 'counsel-M-x
     "g" 'magit
     "p" 'projectile-command-map
-    "n" 'projectile-command-map
     "ol" 'org-insert-link
     "ot" 'org-todo
     "oc" 'org-capture
@@ -96,7 +95,14 @@
 
   (space-leader-def
     :keymaps 'js2-mode-map
-    "cr" 'nodejs-repl-send-buffer))
+    "cr" 'nodejs-repl-send-buffer)
+
+  (general-create-definer dot-leader-def
+    :prefix ","
+    :states '(normal visual))
+  (dot-leader-def
+    "x" 'counsel-M-x)
+  )
 
 
 (provide 'init-keybindings)
