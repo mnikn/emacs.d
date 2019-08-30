@@ -30,6 +30,8 @@
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <down>") 'windmove-down)
 
+(evil-define-key 'normal prog-mode-map "K" 'mnikn/evil-move-up)
+(evil-define-key 'normal prog-mode-map "J" 'mnikn/evil-move-down)
 (evil-define-key 'normal prog-mode-map "H" 'evil-first-non-blank)
 (evil-define-key 'normal prog-mode-map "L" 'evil-end-of-line)
 (evil-define-key 'normal prog-mode-map "=" 'er/expand-region)
@@ -80,6 +82,7 @@
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
     "g" 'magit
+    "m" 'counsel-M-x
     "p" 'projectile-command-map
     "ol" 'org-insert-link
     "ot" 'org-todo
