@@ -33,6 +33,7 @@
 (evil-define-key 'normal prog-mode-map "H" 'evil-first-non-blank)
 (evil-define-key 'normal prog-mode-map "L" 'evil-end-of-line)
 (evil-define-key 'normal prog-mode-map "=" 'er/expand-region)
+(evil-define-key 'normal prog-mode-map "s" 'save-buffer)
 (setq-default evilmi-shortcut "m")
 
 (use-package general
