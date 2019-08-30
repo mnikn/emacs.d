@@ -47,6 +47,7 @@
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
+    "!" 'ansi-term
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
