@@ -50,11 +50,10 @@
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "SPC" 'switch-to-buffer
-    "sg" 'counsel-projectile-ag
+    "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
     "sj" 'counsel-etags-find-tag-at-point
-    "sb" 'dumb-jump-back
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
