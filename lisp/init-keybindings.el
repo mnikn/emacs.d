@@ -28,6 +28,10 @@
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <down>") 'windmove-down)
+(evil-define-key '(normal motion) 'global "1" 'winum-select-window-1)
+(evil-define-key '(normal motion) 'global "2" 'winum-select-window-2)
+(evil-define-key '(normal motion) 'global "3" 'winum-select-window-3)
+(evil-define-key '(normal motion) 'global "4" 'winum-select-window-4)
 
 (evil-define-key '(normal motion) 'global "K" 'mnikn/evil-move-up)
 (evil-define-key '(normal motion) 'global "J" 'mnikn/evil-move-down)

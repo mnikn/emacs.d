@@ -32,6 +32,10 @@
   :config
   (powerline-center-evil-theme))
 
+(use-package winum
+  :config
+  (winum-mode))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)

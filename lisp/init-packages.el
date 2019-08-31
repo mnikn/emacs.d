@@ -35,6 +35,7 @@
                          general
                          monokai-theme
                          golden-ratio
+                         winum
                          powerline
                          hungry-delete
                          popwin
@@ -57,7 +58,6 @@
                          evil-escape
                          expand-region
                          iedit
-                         dumb-jump
                          counsel-etags
                          flycheck
                          lsp-mode
