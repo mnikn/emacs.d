@@ -56,7 +56,7 @@
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
-    "sj" 'counsel-etags-find-tag-at-point
+    ;; "sj" 'counsel-etags-find-tag-at-point
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
@@ -73,7 +73,9 @@
     "bk" 'kill-buffer
     "ee" 'er/expand-region
     "em" 'iedit-mode
-    "cc" 'flycheck-mode
+    "cj" 'lsp-find-definition
+    "cr" 'lsp-rename
+    "cm" 'lsp-ui-imenu
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up
