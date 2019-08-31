@@ -2,9 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package flycheck
-  :config
-  (setq flycheck-check-syntax-automatically '(mode-enabled save)))
+(use-package flycheck)
 
 (provide 'init-flycheck)
 

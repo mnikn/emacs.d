@@ -60,6 +60,9 @@
                          dumb-jump
                          counsel-etags
                          flycheck
+                         lsp-mode
+                         lsp-ui
+                         company-lsp
                          ;; langs
                          web-mode
                          json-mode
