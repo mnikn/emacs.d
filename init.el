@@ -28,7 +28,7 @@
 (require 'init-frontend)
 (require 'init-ctags)
 (require 'init-org)
-(require 'init-browser)
+(require 'init-web)
 (require 'init-keybindings)
 
 (setq custom-file (concat user-emacs-directory "custom.el"))
