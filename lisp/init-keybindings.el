@@ -17,7 +17,6 @@
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
-(global-set-key (kbd "C-c p") 'eshell-previous-matching-input-from-input)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 ;; windows
@@ -30,12 +29,14 @@
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <down>") 'windmove-down)
 
-(evil-define-key 'normal prog-mode-map "K" 'mnikn/evil-move-up)
-(evil-define-key 'normal prog-mode-map "J" 'mnikn/evil-move-down)
-(evil-define-key 'normal prog-mode-map "H" 'evil-first-non-blank)
-(evil-define-key 'normal prog-mode-map "L" 'evil-end-of-line)
-(evil-define-key 'normal prog-mode-map "=" 'er/expand-region)
-(evil-define-key 'normal prog-mode-map "s" 'save-buffer)
+(evil-define-key '(normal motion) 'global "K" 'mnikn/evil-move-up)
+(evil-define-key '(normal motion) 'global "J" 'mnikn/evil-move-down)
+(evil-define-key '(normal motion) 'global "H" 'evil-first-non-blank)
+(evil-define-key '(normal motion) 'global "L" 'evil-end-of-line)
+(evil-define-key '(normal motion) 'global "=" 'er/expand-region)
+(evil-define-key 'normal 'global "s" 'save-buffer)
+(evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
+(evil-define-key 'motion sx-question-mode-map (kbd "<return>") 'sx-display)
 (setq-default evilmi-shortcut "m")
 
 (use-package general

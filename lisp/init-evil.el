@@ -15,11 +15,13 @@
 
 (dolist (p '(
               (term-mode . emacs)
-              (help-mode . emacs)
               (shell-mode . emacs)
               (eshell-mode . emacs)
               (dired-mode . emacs)
-              (flycheck-error-list-mode . emacs)))
+              (help-mode . motion)
+              (sx-question-list-mode . motion)
+              (sx-question-mode . motion)
+              (flycheck-error-list-mode . motion)))
   (evil-set-initial-state (car p) (cdr p)))
 
 (provide 'init-evil)
