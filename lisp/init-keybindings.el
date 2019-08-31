@@ -36,6 +36,7 @@
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key 'normal 'global "s" 'save-buffer)
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
+(evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
 (evil-define-key 'motion sx-question-mode-map (kbd "<return>") 'sx-display)
 (setq-default evilmi-shortcut "m")
 
