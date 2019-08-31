@@ -36,6 +36,7 @@
                          monokai-theme
                          golden-ratio
                          winum
+                         beacon
                          powerline
                          hungry-delete
                          popwin
