@@ -101,12 +101,6 @@
   (space-leader-def
     :keymaps 'js2-mode-map
     "cr" 'nodejs-repl-send-buffer)
-
-  (general-create-definer dot-leader-def
-    :prefix ","
-    :states '(normal visual))
-  (dot-leader-def
-    "x" 'counsel-M-x)
   )
 
 

@@ -13,6 +13,14 @@
     evil-escape-delay 0.2)
   (evil-escape-mode t))
 
+(dolist (p '(
+              (term-mode . emacs)
+              (help-mode . emacs)
+              (shell-mode . emacs)
+              (eshell-mode . emacs)
+              (dired-mode . emacs)
+              (flycheck-error-list-mode . emacs)))
+  (evil-set-initial-state (car p) (cdr p)))
 
 (provide 'init-evil)
 
