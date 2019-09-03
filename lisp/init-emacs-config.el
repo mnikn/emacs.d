@@ -12,7 +12,7 @@
 (use-package recentf
   :config
   (setq-default recentf-save-file (expand-file-name "recentf" user-emacs-directory)
-		recentf-max-menu-items 15)
+		recentf-max-menu-items 100)
   (recentf-mode t))
 
 (use-package exec-path-from-shell

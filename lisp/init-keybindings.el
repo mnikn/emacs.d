@@ -62,8 +62,14 @@
     "?" 'sx-search
     "!" 'ansi-term
     "RET" 'editorconfig-format-buffer
-    "a" 'mark-whole-buffer
+    ;; "a" 'mark-whole-buffer
+    "<left>" 'windmove-left
+    "<right>" 'windmove-right
+    "<up>" 'windmove-up
+    "<down>" 'windmove-down
     "SPC" 'switch-to-buffer
+    "acg" 'avy-goto-char-2
+    "acc" 'avy-goto-char-in-line
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
@@ -85,10 +91,6 @@
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
     "cm" 'lsp-ui-imenu
-    "<left>" 'windmove-left
-    "<right>" 'windmove-right
-    "<up>" 'windmove-up
-    "<down>" 'windmove-down
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
