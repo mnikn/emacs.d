@@ -41,6 +41,9 @@
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key '(normal motion) 'global "-" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
+(evil-define-key 'normal 'global (kbd "[ o") 'mnikn/evil-newline-above)
+(evil-define-key 'normal 'global (kbd "] o") 'mnikn/evil-newline-below)
+
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
 (evil-define-key 'motion sx-question-mode-map (kbd "<return>") 'sx-display)
