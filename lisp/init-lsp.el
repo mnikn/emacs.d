@@ -2,16 +2,14 @@
 ;;; Commentary:
 ;;; Code:
 
+(require 'lsp-clients)
 (use-package lsp-mode
   :config
   (setq-default
     lsp-prefer-flymake nil
-    lsp-auto-configure t
-    ;; lsp--document-symbols-request-async t
+    lsp-auto-configure nil
+    lsp-auto-require-clients t
     lsp-auto-guess-root t))
-  ;; (add-hook 'js2-mode-hook #'lsp-deferred)
-  ;; (add-hook 'typescript-mode-hook #'lsp-deferred)
-  ;; (add-hook 'web-mode-hook #'lsp-deferred))
 
 (use-package lsp-ui
   :config

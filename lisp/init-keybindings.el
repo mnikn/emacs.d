@@ -16,6 +16,7 @@
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "<backtab>") 'switch-to-buffer)
+(global-set-key (kbd "C-<tab>") 'company-lsp)
 (global-set-key (kbd "C-c c") 'org-capture)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
