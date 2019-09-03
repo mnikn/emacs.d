@@ -62,7 +62,7 @@
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
-    ;; "sj" 'counsel-etags-find-tag-at-point
+    "sj" 'counsel-etags-find-tag-at-point
     "ff" 'find-file
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file

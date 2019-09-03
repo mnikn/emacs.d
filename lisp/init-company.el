@@ -18,13 +18,6 @@
 		company-show-numbers t))
 (use-package company-quickhelp
   :hook (company-mode . company-quickhelp-mode))
-(use-package company-lsp
-  :config
-  (setq-default
-    company-lsp--cache-item-candidates 'auto
-    company-lsp-async t
-    company-lsp-enable-snippet t)
-  (push 'company-lsp company-backends))
 
 
 (defvar company-mode/enable-yas t
@@ -37,25 +30,6 @@
             '(:with company-yasnippet))))
 
 (setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
-
-(use-package lsp-mode
-  :defer t
-  :init
-  (setq-default
-    lsp-prefer-flymake nil
-    lsp-auto-configure t
-    lsp-auto-guess-root t)
-  (add-hook 'js2-mode-hook #'lsp-deferred)
-  (add-hook 'typescript-mode-hook #'lsp-deferred)
-  (add-hook 'web-mode-hook #'lsp-deferred))
-
-(use-package lsp-ui
-  :defer t
-  :init
-  (setq-default
-    lsp-ui-doc-enable nil
-    lsp-ui-sideline-enable nil)
-  (add-hook 'lsp-mode-hook 'lsp-ui-mode))
 
 (provide 'init-company)
 

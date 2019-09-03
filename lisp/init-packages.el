@@ -49,6 +49,7 @@
                          neotree
                          ;; editor
                          company
+                         company-go
                          company-quickhelp
                          editorconfig
                          yasnippet
@@ -71,6 +72,7 @@
                          nodejs-repl
                          typescript-mode
                          go-mode
+                         go-eldoc
                          ;; web
                          sx
                          ))
