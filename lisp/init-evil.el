@@ -13,6 +13,10 @@
     evil-escape-delay 0.2)
   (evil-escape-mode t))
 
+(use-package evil-surround
+  :config
+  (global-evil-surround-mode 1))
+
 (dolist (p '(
               (term-mode . emacs)
               (shell-mode . emacs)

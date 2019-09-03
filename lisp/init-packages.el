@@ -60,6 +60,7 @@
                          evil-escape
                          expand-region
                          iedit
+                         evil-surround
                          counsel-etags
                          flycheck
                          lsp-mode
