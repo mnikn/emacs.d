@@ -107,6 +107,11 @@
   (space-leader-def
     :keymaps 'js2-mode-map
     "cr" 'nodejs-repl-send-buffer)
+  
+  (space-leader-def
+    :keymaps 'go-mode-map
+    "ec" 'mnikn/go-build
+    "er" 'mnikn/go-run)
   )
 
 
