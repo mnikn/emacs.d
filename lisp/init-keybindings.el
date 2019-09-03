@@ -39,6 +39,7 @@
 (evil-define-key '(normal motion) 'global "H" 'evil-first-non-blank)
 (evil-define-key '(normal motion) 'global "L" 'evil-end-of-line)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
+(evil-define-key '(normal motion) 'global "-" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
@@ -78,8 +79,6 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
-    "ee" 'er/expand-region
-    "em" 'iedit-mode
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
     "cm" 'lsp-ui-imenu
