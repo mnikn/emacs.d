@@ -31,6 +31,8 @@
                          counsel
                          swiper
                          exec-path-from-shell
+                         helm
+                         helm-dash
                          evil
                          general
                          monokai-theme

@@ -26,6 +26,10 @@
   (setq-default dired-dwim-target t))
 (put 'dired-find-alternate-file 'disabled nil)
 
+(use-package helm-dash
+  :config
+  (setq-default helm-dash-browser-func 'eww))
+
 (setq-default auto-save-default nil
 	      make-backup-files nil
 	      create-lockfiles nil
