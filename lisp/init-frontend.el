@@ -15,11 +15,16 @@
 (use-package json-mode
   :mode ("\\.json" . json-mode))
 
+(use-package rjsx-mode
+  :mode
+  ("\\.jsx" . rjsx-mode))
+  ;; ("\\.tsx" . rjsx-mode)
+
 (use-package web-mode
   :mode
   ("\\.html". web-mode)
   ("\\.css". web-mode)
-  ("\\.jsx". web-mode)
+  ;; ("\\.jsx". web-mode)
   ("\\.tsx". web-mode)
   :config
   (setq-default web-mode-auto-close-style 2))

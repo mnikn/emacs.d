@@ -73,6 +73,7 @@
                          web-mode
                          json-mode
                          js2-mode
+                         rjsx-mode
                          nodejs-repl
                          typescript-mode
                          go-mode
