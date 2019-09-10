@@ -61,6 +61,7 @@
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
     "!" 'ansi-term
+    "\\" 'toggle-input-method
     "RET" 'editorconfig-format-buffer
     ;; "a" 'mark-whole-buffer
     "<left>" 'windmove-left

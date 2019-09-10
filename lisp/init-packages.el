@@ -44,6 +44,8 @@
                          popwin
                          wgrep
                          restart-emacs
+                         pyim
+                         pyim-basedict
                          ;; project mangement
                          projectile
                          counsel-projectile
