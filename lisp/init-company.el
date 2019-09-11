@@ -31,6 +31,9 @@
 
 (setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/company-english-helper")
+(use-package company-english-helper)
+
 (provide 'init-company)
 
 ;;; init-company.el ends here
