@@ -9,6 +9,12 @@
 (global-set-key (kbd "C-c y") 'company-yasnippet)
 (global-set-key (kbd "S-<up>") 'mnikn/evil-move-up)
 (global-set-key (kbd "S-<down>") 'mnikn/evil-move-down)
+(define-key awesome-pair-mode-map (kbd "(") 'awesome-pair-open-round)
+(define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
+(define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
+(define-key awesome-pair-mode-map (kbd "\"") 'awesome-pair-double-quote)
+;; (define-key awesome-pair-mode-map (kbd "C-k") 'awesome-pair-kill)
+;; (define-key awesome-pair-mode-map (kbd "C-K") 'awesome-pair-backward-kill)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -69,8 +75,8 @@
     "<up>" 'windmove-up
     "<down>" 'windmove-down
     "SPC" 'switch-to-buffer
-    "acg" 'avy-goto-char-2
-    "acc" 'avy-goto-char-in-line
+    "ag" 'avy-goto-char-2
+    "aa" 'avy-goto-char-in-line
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
@@ -89,6 +95,8 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
+    "ek" 'awesome-pair-kill
+    "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
     "cm" 'lsp-ui-imenu
