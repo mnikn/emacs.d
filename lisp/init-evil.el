@@ -25,6 +25,7 @@
               (help-mode . motion)
               (sx-question-list-mode . motion)
               (sx-question-mode . motion)
+              (lsp-ui-imenu-mode . motion)
               (flycheck-error-list-mode . motion)))
   (evil-set-initial-state (car p) (cdr p)))
 

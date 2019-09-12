@@ -2,6 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 
+(defun mnikn/magit-blame ()
+  (interactive)
+  (if (bound-and-true-p magit-blame-mode)
+    (magit-blame-quit)
+    (magit-blame)))
+
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-c -") 'iedit-mode)
@@ -13,8 +19,6 @@
 (define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
 (define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
 (define-key awesome-pair-mode-map (kbd "\"") 'awesome-pair-double-quote)
-;; (define-key awesome-pair-mode-map (kbd "C-k") 'awesome-pair-kill)
-;; (define-key awesome-pair-mode-map (kbd "C-K") 'awesome-pair-backward-kill)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -103,7 +107,10 @@
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
-    "g" 'magit
+    "gs" 'magit-status
+    "gll" 'magit-log-buffer-file
+    "gla" 'magit-log-current
+    "gb" 'mnikn/magit-blame
     "m" 'counsel-M-x
     "p" 'projectile-command-map
     "ol" 'org-insert-link
