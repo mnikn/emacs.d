@@ -131,8 +131,8 @@
   
   (space-leader-def
     :keymaps 'go-mode-map
-    "ec" 'mnikn/go-build
-    "er" 'mnikn/go-run)
+    "cb" 'mnikn/go-build
+    "cr" 'mnikn/go-run)
   )
 
 
