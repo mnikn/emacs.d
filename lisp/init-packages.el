@@ -47,6 +47,7 @@
                          pyim
                          pyim-basedict
                          rainbow-delimiters
+                         doom-themes
                          ;; project mangement
                          projectile
                          counsel-projectile

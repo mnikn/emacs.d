@@ -2,9 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package monokai-theme
+(use-package doom-themes
   :config
-  (load-theme 'monokai t))
+  (load-theme 'doom-Iosvkem t))
 
 (use-package popwin
   :config
@@ -45,7 +45,7 @@
 (scroll-bar-mode -1)
 (global-hl-line-mode t)
 (global-linum-mode t)
-(set-face-attribute 'region nil :background "#afb4ba")
+(set-face-attribute 'default nil :family "Monaco" :weight 'normal :width 'normal)
 
 (provide 'init-ui)
 
