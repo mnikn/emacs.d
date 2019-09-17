@@ -104,6 +104,7 @@
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
     "cm" 'lsp-ui-imenu
+    "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
