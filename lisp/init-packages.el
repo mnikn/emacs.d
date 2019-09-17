@@ -46,6 +46,7 @@
                          restart-emacs
                          pyim
                          pyim-basedict
+                         rainbow-delimiters
                          ;; project mangement
                          projectile
                          counsel-projectile

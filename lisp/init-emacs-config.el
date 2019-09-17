@@ -55,6 +55,10 @@
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(use-package rainbow-delimiters
+  :config
+  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
+
 (provide 'init-emacs-config)
 
 ;;; init-emacs-config.el ends here
