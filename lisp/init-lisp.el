@@ -10,10 +10,10 @@
 ;; 	     (funcall fn)))))
 
 ;; (electric-pair-mode t)
-(set-face-background 'show-paren-match (face-background 'default))
-(set-face-foreground 'show-paren-match "#03a1fc")
-(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
-(add-hook 'prog-mode-hook 'show-paren-mode)
+;; (set-face-background 'show-paren-match (face-background 'default))
+;; (set-face-foreground 'show-paren-match "#03a1fc")
+;; (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+;; (add-hook 'prog-mode-hook 'show-paren-mode)
 
 (provide 'init-lisp)
 

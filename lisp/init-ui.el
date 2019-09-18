@@ -45,7 +45,10 @@
 (scroll-bar-mode -1)
 (global-hl-line-mode t)
 (global-linum-mode t)
-(set-face-attribute 'default nil :family "Monaco" :weight 'normal :width 'normal)
+(set-face-attribute 'default nil :family "Mononoki" :weight 'normal :width 'normal)
+(set-face-background 'show-paren-match (face-background 'default))
+(set-face-foreground 'show-paren-match "#03a1fc")
+(set-face-attribute 'show-paren-match nil :weight 'extra-bold)
 
 (provide 'init-ui)
 
