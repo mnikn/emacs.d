@@ -110,7 +110,7 @@
     "wd" 'delete-window
     "gs" 'magit-status
     "gll" 'magit-log-buffer-file
-    "gla" 'magit-log-current
+    "glg" 'magit-log-current
     "gb" 'mnikn/magit-blame
     "m" 'counsel-M-x
     "p" 'projectile-command-map
