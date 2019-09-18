@@ -82,6 +82,7 @@
                          typescript-mode
                          go-mode
                          go-eldoc
+                         elpy
                          ;; web
                          sx
                          ))

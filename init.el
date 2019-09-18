@@ -26,6 +26,7 @@
 (require 'init-lisp)
 (require 'init-go)
 (require 'init-frontend)
+(require 'init-python)
 (require 'init-lsp)
 (require 'init-ctags)
 (require 'init-org)

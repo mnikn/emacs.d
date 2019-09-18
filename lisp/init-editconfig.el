@@ -27,6 +27,7 @@
 (use-package awesome-pair
   :config
   (add-hook 'emacs-lisp-mode-hook 'mnikn/setup-pair-mode)
+  (add-hook 'python-mode-hook 'mnikn/setup-pair-mode)
   (add-hook 'go-mode-hook 'mnikn/setup-pair-mode)
   (add-hook 'js2-mode-hook 'mnikn/setup-pair-mode)
   (add-hook 'typescript-mode-hook 'mnikn/setup-pair-mode)
