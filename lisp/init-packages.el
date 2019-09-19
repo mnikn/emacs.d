@@ -48,11 +48,13 @@
                          pyim-basedict
                          rainbow-delimiters
                          doom-themes
+                         treemacs
+                         treemacs-evil
+                         treemacs-projectile
                          ;; project mangement
                          projectile
                          counsel-projectile
                          magit
-                         neotree
                          ;; editor
                          company
                          company-go

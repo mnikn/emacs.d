@@ -21,7 +21,9 @@
 		ivy-re-builders-alist '((t . ivy--regex-plus)))
   (ivy-mode t))
 
-(use-package neotree)
+(use-package treemacs)
+(use-package treemacs-evil)
+(use-package treemacs-projectile)
 
 (use-package golden-ratio
   :config
