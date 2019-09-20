@@ -48,6 +48,8 @@
 (evil-define-key '(normal motion) 'global "J" 'mnikn/evil-move-down)
 (evil-define-key '(normal motion) 'global "H" 'evil-first-non-blank)
 (evil-define-key '(normal motion) 'global "L" 'evil-end-of-line)
+(evil-define-key '(normal motion) 'global "f" 'avy-goto-char-in-line)
+(evil-define-key '(normal motion) 'global "F" 'avy-goto-char-2)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key '(normal motion) 'global "-" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
@@ -73,14 +75,12 @@
     "!" 'ansi-term
     "\\" 'toggle-input-method
     "RET" 'editorconfig-format-buffer
-    ;; "a" 'mark-whole-buffer
+    "a" 'mark-whole-buffer
     "<left>" 'windmove-left
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
     "SPC" 'switch-to-buffer
-    "ag" 'avy-goto-char-2
-    "aa" 'avy-goto-char-in-line
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
