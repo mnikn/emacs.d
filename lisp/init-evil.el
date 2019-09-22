@@ -21,6 +21,7 @@
               (term-mode . emacs)
               (shell-mode . emacs)
               (eshell-mode . emacs)
+              (image-mode . emacs)
               (dired-mode . emacs)
               (help-mode . motion)
               (sx-question-list-mode . motion)

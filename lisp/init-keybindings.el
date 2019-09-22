@@ -109,6 +109,7 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
+    "ee" 'toggle-company-english-helper
     "ek" 'awesome-pair-kill
     "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
@@ -134,7 +135,8 @@
     "oss" 'org-schedule
     "osd" 'org-deadline
     "or" 'org-refile
-    "og" 'org-set-tags)
+    "oo" 'org-open-at-point
+    "oq" 'org-set-tags)
 
   (space-leader-def
     :keymaps 'js2-mode-map

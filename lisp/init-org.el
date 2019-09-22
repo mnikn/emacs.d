@@ -2,7 +2,7 @@
 ;;; Commentary:
 ;;; Code:
 
-
+(add-hook 'org-mode-hook 'toggle-truncate-lines)
 (setq org-english-words-file "~/OneDrive/org/english_words.org")
 (setq-default
  org-default-notes-file "~/OneDrive/org/refile.org"
