@@ -51,6 +51,7 @@
                          treemacs
                          treemacs-evil
                          treemacs-projectile
+                         org-bullets
                          ;; project mangement
                          projectile
                          counsel-projectile

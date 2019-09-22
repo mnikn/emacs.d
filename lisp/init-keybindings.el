@@ -130,11 +130,12 @@
     "oc" 'org-capture
     "od" 'org-archive-subtree
     "oa" 'org-agenda
-    "oi" 'org-insert-subheading
     "op" 'org-set-property
     "oss" 'org-schedule
     "osd" 'org-deadline
     "or" 'org-refile
+    "oil" 'org-insert-link
+    "oin" 'org-insert-subheading
     "oo" 'org-open-at-point
     "oq" 'org-set-tags)
 
