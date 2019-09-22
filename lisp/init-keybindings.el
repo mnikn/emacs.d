@@ -136,6 +136,10 @@
     "or" 'org-refile
     "oil" 'org-insert-link
     "oin" 'org-insert-subheading
+    "oki" 'org-clock-in
+    "oko" 'org-clock-out
+    "okg" 'org-clock-goto
+    "okc" 'org-clock-cancel
     "oo" 'org-open-at-point
     "oq" 'org-set-tags)
 

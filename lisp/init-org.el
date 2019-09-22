@@ -25,6 +25,11 @@
   org-clock-persist t
   org-clock-into-drawer t
   org-clock-report-include-clocking-task t
+  org-tag-alist '((:startgroup . nil)
+                   ("WORK" . ?w)
+                   ("METTING" . ?m)
+                   ("NOTE" . ?n)
+                   ("LIFE" . ?l))
   org-todo-keywords '((sequence "TODO(t)" "IN PREOGRESS(i!)" "|" "DONE(d!)")
                        (sequence "HOLD(h!)" "WAITING(w@/!)" "|" "CANCELED(c@/!)"))
   org-todo-keyword-faces  '(("TODO" :foreground "red" :weight bold)
@@ -33,8 +38,8 @@
                              ("WAITING" :foreground "orange" :weight bold)
                              ("HOLD" :foreground "magenta" :weight bold)
                              ("CANCELED" :foreground "forest green" :weight bold))
-  org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n:PROPERTIES:\n:CREATED: %U\n:CATEGORY: %i\n:END:\n")
-                           ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:TITLE: %i\n:CREATED: %U\n:TAGS: [%i]\n:END:\n")
+  org-capture-templates '(("t" "Todo item" entry (file org-default-notes-file) "* TODO %?\n:PROPERTIES:\n:CREATED: %U\n:CATEGORY: TASK\n:END:\n")
+                           ("n" "Note" entry (file org-default-notes-file) "* %?\n:PROPERTIES:\n:CREATED: %U\n:CATEGORY: NOTE\n:END:\n")
                            ("e" "English words" entry (file+headline org-english-words-file "Words") "* %?\n** Meanings\n** Sample\n")))
 
 (org-babel-do-load-languages
