@@ -63,7 +63,6 @@
                          yasnippet
                          yasnippet-snippets
                          diff-hl
-                         evil-matchit
                          evil-nerd-commenter
                          evil-escape
                          expand-region
