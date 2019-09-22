@@ -8,8 +8,16 @@
     (magit-blame-quit)
     (magit-blame)))
 
+(defun mnikn/evil-toggle-input-method ()
+  (interactive)
+  (if (not current-input-method)
+    (if (not (string= evil-state "insert"))
+      (evil-insert-state)))
+  (toggle-input-method))
+
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
+(global-set-key (kbd "C-\\") 'mnikn/evil-toggle-input-method)
 (global-set-key (kbd "C-c -") 'iedit-mode)
 (global-set-key (kbd "C-s") 'swiper)
 (global-set-key (kbd "C-c y") 'company-yasnippet)
