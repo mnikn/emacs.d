@@ -50,6 +50,8 @@
 (evil-define-key '(normal motion) 'global "L" 'evil-end-of-line)
 (evil-define-key '(normal motion) 'global "f" 'avy-goto-char-in-line)
 (evil-define-key '(normal motion) 'global "F" 'avy-goto-char-2)
+(evil-define-key '(normal motion) 'global "m" 'awesome-pair-jump-left)
+(evil-define-key '(normal motion) 'global "M" 'awesome-pair-jump-right)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key '(normal motion) 'global "-" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
@@ -59,7 +61,7 @@
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
 (evil-define-key 'motion sx-question-mode-map (kbd "<return>") 'sx-display)
-(setq-default evilmi-shortcut "m")
+;; (setq-default evilmi-shortcut "m")
 
 (use-package general
   :config

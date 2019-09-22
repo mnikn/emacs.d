@@ -19,9 +19,9 @@
     (lambda (props) (setq web-mode-block-padding 0)))
   (editorconfig-mode t))
 
-(use-package evil-matchit
-  :config
-  (global-evil-matchit-mode 1))
+;; (use-package evil-matchit
+;;   :config
+;;   (global-evil-matchit-mode 1))
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/awesome-pair")
 (use-package awesome-pair
