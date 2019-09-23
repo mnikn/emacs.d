@@ -48,6 +48,7 @@
   '((python . t)
      (emacs-lisp . t)
      (shell . t)
+     (C . t)
      (js . t)))
 
 (use-package deft
