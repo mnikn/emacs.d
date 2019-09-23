@@ -96,6 +96,7 @@
     "sp" 'swiper-thing-at-point
     "sj" 'counsel-etags-find-tag-at-point
     "ff" 'find-file
+    "fj" 'ffap
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
     "fo" 'mnikn/open-org-dir
