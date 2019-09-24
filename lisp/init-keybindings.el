@@ -15,6 +15,13 @@
       (evil-insert-state)))
   (toggle-input-method))
 
+(defun mnikn/evil-quick-mark ()
+  (interactive)
+  (evil-set-marker 1))
+
+(defun mnikn/evil-goto-mark-line ()
+  (interactive)
+  (evil-goto-mark-line 1))
 
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
@@ -52,8 +59,7 @@
 (evil-define-key '(normal motion visual) 'global "J" 'mnikn/evil-move-down)
 (evil-define-key '(normal motion visual) 'global "H" 'evil-first-non-blank)
 (evil-define-key '(normal motion visual) 'global "L" 'evil-end-of-line)
-(evil-define-key '(normal motion visual) 'global "m" 'awesome-pair-jump-left)
-(evil-define-key '(normal motion visual) 'global "M" 'awesome-pair-jump-right)
+(evil-define-key '(normal motion visual) 'global "f" 'avy-goto-char-in-line)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key '(normal visual) 'global "\\" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
@@ -94,7 +100,7 @@
     "fm" 'dired-jump
     "fc" 'mnikn/open-config-file
     "fo" 'mnikn/open-org-dir
-    "fr" 'recentf-open-files
+    "fr" 'counsel-recentf
     "hf" 'counsel-describe-function
     "hv" 'counsel-describe-variable
     "hk" 'describe-key
@@ -110,6 +116,8 @@
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
     "cm" 'lsp-ui-imenu
+    "jj" 'mnikn/evil-goto-mark-line
+    "jm" 'mnikn/evil-quick-mark
     ;; "cm" 'counsel-imenu
     "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically

@@ -23,9 +23,9 @@
   (add-hook 'before-save-hook 'gofmt-before-save)
   (add-hook 'go-mode-hook 'mnikn/go-doc))
 
-(use-package company-go
-  :config
-  (add-hook 'go-mode-hook (lambda () (push  'company-go company-backends))))
+;; (use-package company-go
+;;   :config
+;;   (add-hook 'go-mode-hook (lambda () (push  'company-go company-backends))))
 
 (use-package go-eldoc
   :config

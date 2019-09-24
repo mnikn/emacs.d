@@ -67,9 +67,10 @@
                          diff-hl
                          evil-nerd-commenter
                          evil-escape
+                         evil-surround
                          expand-region
                          iedit
-                         evil-surround
+                         avy
                          counsel-etags
                          flycheck
                          lsp-mode
