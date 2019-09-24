@@ -15,6 +15,7 @@
       (evil-insert-state)))
   (toggle-input-method))
 
+
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-\\") 'mnikn/evil-toggle-input-method)
@@ -33,8 +34,7 @@
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
-(global-set-key (kbd "<backtab>") 'switch-to-buffer)
-(global-set-key (kbd "C-<tab>") 'company-lsp)
+(global-set-key (kbd "C-<tab>") 'counsel-ibuffer)
 (global-set-key (kbd "C-c c") 'org-capture)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
@@ -47,21 +47,15 @@
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>") 'windmove-up)
 (global-set-key (kbd "C-c <down>") 'windmove-down)
-(evil-define-key '(normal motion) 'global (kbd "C-1") 'winum-select-window-1)
-(evil-define-key '(normal motion) 'global (kbd "C-2") 'winum-select-window-2)
-(evil-define-key '(normal motion) 'global (kbd "C-3") 'winum-select-window-3)
-(evil-define-key '(normal motion) 'global (kbd "C-4") 'winum-select-window-4)
 
 (evil-define-key '(normal motion visual) 'global "K" 'mnikn/evil-move-up)
 (evil-define-key '(normal motion visual) 'global "J" 'mnikn/evil-move-down)
 (evil-define-key '(normal motion visual) 'global "H" 'evil-first-non-blank)
 (evil-define-key '(normal motion visual) 'global "L" 'evil-end-of-line)
-(evil-define-key '(normal motion visual) 'global "f" 'avy-goto-char-in-line)
-(evil-define-key '(normal motion visual) 'global "F" 'avy-goto-char-2)
 (evil-define-key '(normal motion visual) 'global "m" 'awesome-pair-jump-left)
 (evil-define-key '(normal motion visual) 'global "M" 'awesome-pair-jump-right)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
-(evil-define-key '(normal visual) 'global ";" 'iedit-mode)
+(evil-define-key '(normal visual) 'global "\\" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)
 (evil-define-key 'normal 'global (kbd "0 o") 'mnikn/evil-newline-below)
 (evil-define-key 'normal 'global (kbd "0 O") 'mnikn/evil-newline-above)
@@ -90,7 +84,7 @@
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
-    "SPC" 'switch-to-buffer
+    "SPC" 'counsel-ibuffer
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
@@ -105,7 +99,7 @@
     "hv" 'counsel-describe-variable
     "hk" 'describe-key
     "hm" 'describe-mode
-    "bb" 'switch-to-buffer
+    ;; "bb" 'switch-to-buffer
     "bs" 'save-buffer
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
@@ -115,7 +109,8 @@
     "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
-    "cm" 'lsp-ui-imenu
+    ;; "cm" 'lsp-ui-imenu
+    "cm" 'counsel-imenu
     "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
@@ -148,12 +143,12 @@
 
   (space-leader-def
     :keymaps 'js2-mode-map
-    "cr" 'nodejs-repl-send-buffer)
+    "be" 'nodejs-repl-send-buffer)
   
   (space-leader-def
     :keymaps 'go-mode-map
-    "cb" 'mnikn/go-build
-    "cr" 'mnikn/go-run)
+    "bb" 'mnikn/go-build
+    "be" 'mnikn/go-run)
   )
 
 

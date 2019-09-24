@@ -50,6 +50,8 @@
   default-input-method "pyim"
   truncate-lines nil
   truncate-partial-width-windows nil
+  scroll-margin 3
+  scroll-conservatively 10000
   initial-frame-alist '((fullscreen . maximized)))
 
 (global-auto-revert-mode t)
