@@ -69,7 +69,6 @@
                          evil-escape
                          expand-region
                          iedit
-                         avy
                          evil-surround
                          counsel-etags
                          flycheck

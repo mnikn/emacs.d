@@ -34,7 +34,7 @@
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
-(global-set-key (kbd "C-<tab>") 'counsel-ibuffer)
+(global-set-key (kbd "C-<tab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
@@ -76,7 +76,7 @@
     "-" 'iedit-mode
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
-    "!" 'ansi-term
+    "," 'ansi-term
     "\\" 'toggle-input-method
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
@@ -84,7 +84,7 @@
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
-    "SPC" 'counsel-ibuffer
+    "SPC" 'switch-to-buffer
     "sg" 'counsel-projectile-git-grep
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
