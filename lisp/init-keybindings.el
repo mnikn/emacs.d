@@ -60,6 +60,7 @@
 (evil-define-key '(normal motion visual) 'global "H" 'evil-first-non-blank)
 (evil-define-key '(normal motion visual) 'global "L" 'evil-end-of-line)
 (evil-define-key '(normal motion visual) 'global "f" 'avy-goto-char-in-line)
+(evil-define-key '(normal motion visual) 'global "m" 'evil-jump-item)
 (evil-define-key '(normal motion) 'global "=" 'er/expand-region)
 (evil-define-key '(normal visual) 'global "\\" 'iedit-mode)
 (evil-define-key 'normal 'global "s" 'save-buffer)

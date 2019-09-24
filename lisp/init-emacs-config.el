@@ -26,10 +26,6 @@
   (setq-default dired-dwim-target t))
 (put 'dired-find-alternate-file 'disabled nil)
 
-(use-package helm-dash
-  :config
-  (setq-default helm-dash-browser-func 'eww))
-
 (use-package pyim)
 (use-package pyim-basedict
   :config

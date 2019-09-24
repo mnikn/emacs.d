@@ -12,16 +12,10 @@
   (interactive "Finput the entry file path:")
   (shell-command (format "go run %s" entry-file-path)))
 
-(defun mnikn/go-doc ()
-  "Go doc by dash"
-  (interactive)
-  (setq-local helm-dash-docsets '("Go")))
-
 (use-package go-mode
   :mode ("\\.go" . go-mode)
   :config
-  (add-hook 'before-save-hook 'gofmt-before-save)
-  (add-hook 'go-mode-hook 'mnikn/go-doc))
+  (add-hook 'before-save-hook 'gofmt-before-save))
 
 ;; (use-package company-go
 ;;   :config
