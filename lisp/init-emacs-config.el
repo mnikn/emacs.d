@@ -61,6 +61,9 @@
   :config
   (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
+(use-package ox-ioslide)
+(use-package ox-ioslide-helper)
+
 (provide 'init-emacs-config)
 
 ;;; init-emacs-config.el ends here

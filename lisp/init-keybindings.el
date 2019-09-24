@@ -109,8 +109,8 @@
     "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
     "cr" 'lsp-rename
-    ;; "cm" 'lsp-ui-imenu
-    "cm" 'counsel-imenu
+    "cm" 'lsp-ui-imenu
+    ;; "cm" 'counsel-imenu
     "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
