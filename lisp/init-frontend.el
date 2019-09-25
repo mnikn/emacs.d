@@ -26,6 +26,7 @@
   ("\\.css". web-mode)
   ;; ("\\.jsx". web-mode)
   ("\\.tsx". web-mode)
+  ("\\.vue". web-mode)
   :config
   (setq-default web-mode-auto-close-style 2))
   ;; :config
