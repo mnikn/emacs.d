@@ -21,13 +21,12 @@
 		ivy-re-builders-alist '((t . ivy--regex-plus)))
   (ivy-mode t))
 
-(use-package treemacs)
-(use-package treemacs-evil)
-(use-package treemacs-projectile)
-
-(use-package golden-ratio
-  :config
-  (golden-ratio-mode 1))
+(use-package treemacs
+  :commands (treemacs))
+(use-package treemacs-evil
+  :after (treemacs))
+(use-package treemacs-projectile
+  :after (treemacs))
 
 
 (use-package powerline
@@ -50,7 +49,7 @@
 (scroll-bar-mode -1)
 (global-hl-line-mode t)
 (global-linum-mode t)
-(set-face-attribute 'default nil :family "Mononoki" :weight 'normal :width 'normal)
+;; (set-face-attribute 'default nil :family "Mononoki" :weight 'normal :width 'normal)
 (set-face-background 'show-paren-match (face-background 'default))
 (set-face-foreground 'show-paren-match "#03a1fc")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)

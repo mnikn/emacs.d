@@ -119,6 +119,7 @@
     "cm" 'lsp-ui-imenu
     "jj" 'mnikn/evil-goto-mark-line
     "jm" 'mnikn/evil-quick-mark
+    "jw" 'ace-window
     ;; "cm" 'counsel-imenu
     "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically

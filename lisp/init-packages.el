@@ -35,7 +35,6 @@
                          evil
                          general
                          monokai-theme
-                         golden-ratio
                          winum
                          beacon
                          powerline

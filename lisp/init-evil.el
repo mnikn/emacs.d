@@ -18,9 +18,9 @@
   (global-evil-surround-mode 1))
 
 (dolist (p '(
-              (term-mode . emacs)
-              (shell-mode . emacs)
-              (eshell-mode . emacs)
+              ;; (term-mode . emacs)
+              ;; (shell-mode . emacs)
+              ;; (eshell-mode . emacs)
               (special-mode . motion)
               (image-mode . emacs)
               (makey-key-mode . emacs)
