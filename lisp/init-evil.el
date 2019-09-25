@@ -21,6 +21,7 @@
               (term-mode . emacs)
               (shell-mode . emacs)
               (eshell-mode . emacs)
+              (special-mode . motion)
               (image-mode . emacs)
               (makey-key-mode . emacs)
               (dired-mode . emacs)

@@ -30,12 +30,8 @@
   (add-hook 'css-mode-hook 'mnikn/setup-pair-mode)
   (add-hook 'web-mode-hook 'mnikn/setup-pair-mode))
 
-(add-hook 'prog-mode-hook 'show-paren-mode)
-;;  (dolist (hook (list
-;;                 'lisp-mode-hook
-;;                ))
-;;(add-hook hook '(lambda () (awesome-pair-mode 1))))
-
+(use-package avy
+  :commands (avy-goto-char-2))
 
 (provide 'init-editconfig)
 

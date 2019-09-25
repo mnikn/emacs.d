@@ -44,6 +44,7 @@
 (global-set-key (kbd "C-<tab>") 'switch-to-buffer)
 (global-set-key (kbd "C-c c") 'org-capture)
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 
 ;; windows
 (global-set-key (kbd "C-c h") 'split-and-follow-horizontally)
@@ -84,7 +85,6 @@
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
     "," 'ansi-term
-    "\\" 'toggle-input-method
     "RET" 'editorconfig-format-buffer
     "a" 'mark-whole-buffer
     "<left>" 'windmove-left

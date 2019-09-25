@@ -89,7 +89,8 @@
                          ;; web
                          sx
                          ;; tools
-                         ox-ioslide
+                         ;; ox-reveal
+                         ;;                         ox-ioslide
                          ))
 (setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                                   ("melpa" . "http://elpa.emacs-china.org/melpa/"))

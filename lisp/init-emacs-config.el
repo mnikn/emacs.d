@@ -22,14 +22,18 @@
 
 (use-package dired
   :config
-  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
-  (setq-default dired-dwim-target t))
-(put 'dired-find-alternate-file 'disabled nil)
+  (setq-default dired-dwim-target t)
+  (put 'dired-find-alternate-file 'disabled nil))
 
-(use-package pyim)
+(use-package pyim
+  :commands (toggle-input-method))
 (use-package pyim-basedict
+  :after (pyim)
   :config
   (pyim-basedict-enable))
+
+(use-package rainbow-delimiters
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (setq-default auto-save-default nil
   make-backup-files nil
@@ -53,12 +57,9 @@
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(use-package rainbow-delimiters
-  :config
-  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
 
-(use-package ox-ioslide)
-(use-package ox-ioslide-helper)
+;; (use-package ox-ioslide)
+;; (use-package ox-ioslide-helper)
 
 (provide 'init-emacs-config)
 
