@@ -57,6 +57,7 @@
                          counsel-projectile
                          magit
                          ;; editor
+                         indent-guide
                          company
                          company-go
                          company-quickhelp
