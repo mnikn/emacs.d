@@ -67,7 +67,6 @@
 (evil-define-key 'normal 'global "s" 'save-buffer)
 (evil-define-key 'normal 'global (kbd "0 o") 'mnikn/evil-newline-below)
 (evil-define-key 'normal 'global (kbd "0 O") 'mnikn/evil-newline-above)
-(evil-define-key 'normal 'term-mode-map "p" 'term-paste)
 
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
