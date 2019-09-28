@@ -148,7 +148,8 @@
     "okc" 'org-clock-cancel
     "oo" 'org-open-at-point
     "ob" 'org-toggle-checkbox
-    "oe" 'org-babel-execute-src-block
+    "oer" 'org-babel-execute-src-block
+    "oee" 'org-edit-src-code
     "oq" 'org-set-tags)
 
   (space-leader-def

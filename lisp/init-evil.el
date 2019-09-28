@@ -18,12 +18,10 @@
   (global-evil-surround-mode 1))
 
 (dolist (p '(
-              ;; (term-mode . emacs)
-              ;; (shell-mode . emacs)
-              ;; (eshell-mode . emacs)
               (special-mode . motion)
               (image-mode . emacs)
               (makey-key-mode . emacs)
+              (ivy-occur-grep-mode . normal)
               (dired-mode . emacs)
               (help-mode . motion)
               (sx-question-list-mode . motion)
