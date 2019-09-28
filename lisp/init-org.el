@@ -9,7 +9,7 @@
 (setq org-english-words-file "~/OneDrive/org/english_words.org")
 (setq-default
   org-default-notes-file "~/OneDrive/org/refile.org"
-  org-agenda-files '("~/OneDrive/org/gtd.org")
+  org-agenda-files '("~/OneDrive/org/gtd.org" "~/OneDrive/org/activity.org")
   org-drawers '("PROPERTIES" "LOGBOOK")
   org-startup-indented t
   org-refile-use-outline-path 'file

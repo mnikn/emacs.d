@@ -71,7 +71,6 @@
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
 (evil-define-key 'motion sx-question-mode-map (kbd "<return>") 'sx-display)
-;; (setq-default evilmi-shortcut "m")
 
 (use-package general
   :config
@@ -106,7 +105,6 @@
     "hv" 'counsel-describe-variable
     "hk" 'describe-key
     "hm" 'describe-mode
-    ;; "bb" 'switch-to-buffer
     "bs" 'save-buffer
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
@@ -120,7 +118,6 @@
     "jj" 'mnikn/evil-goto-mark-line
     "jm" 'mnikn/evil-quick-mark
     "jw" 'ace-window
-    ;; "cm" 'counsel-imenu
     "cc" 'flycheck-mode
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally

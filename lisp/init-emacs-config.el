@@ -26,7 +26,9 @@
   (put 'dired-find-alternate-file 'disabled nil))
 
 (use-package pyim
-  :commands (toggle-input-method))
+  :commands (toggle-input-method)
+  :config
+  (set-default pyim-default-scheme 'pyim-shuangpin))
 (use-package pyim-basedict
   :after (pyim)
   :config
