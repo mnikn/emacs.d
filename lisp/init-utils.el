@@ -51,6 +51,11 @@
   (evil-open-above 1)
   (evil-force-normal-state))
 
+(defun mnikn/show-current-major-mode ()
+  "Show current major mode"
+  (interactive)
+  (describe-variable 'major-mode))
+
 (provide 'init-utils)
 
 ;;; init-utils.el ends here

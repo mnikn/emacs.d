@@ -104,7 +104,8 @@
     "hf" 'counsel-describe-function
     "hv" 'counsel-describe-variable
     "hk" 'describe-key
-    "hm" 'describe-mode
+    "hmm" 'mnikn/show-current-major-mode
+    "hmn" 'describe-mode
     "bs" 'save-buffer
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
