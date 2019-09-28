@@ -24,6 +24,7 @@
               (ivy-occur-grep-mode . normal)
               (dired-mode . emacs)
               (help-mode . motion)
+              (messages-buffer-mode . motion)
               (sx-question-list-mode . motion)
               (sx-question-mode . motion)
               (lsp-ui-imenu-mode . emacs)
