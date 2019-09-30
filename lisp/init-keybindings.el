@@ -23,6 +23,11 @@
   (interactive)
   (evil-goto-mark-line 1))
 
+(defun mnikn/insert-translate-name (ARG)
+  (interactive "p")
+  (evil-insert-state)
+  (insert-translated-name-insert ARG))
+
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
 (global-set-key (kbd "C-\\") 'mnikn/evil-toggle-input-method)
@@ -35,6 +40,7 @@
 (define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
 (define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
 (define-key awesome-pair-mode-map (kbd "\"") 'awesome-pair-double-quote)
+(define-key go-mode-map (kbd "<backtab>") 'company-go)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -67,6 +73,9 @@
 (evil-define-key 'normal 'global "s" 'save-buffer)
 (evil-define-key 'normal 'global (kbd "0 o") 'mnikn/evil-newline-below)
 (evil-define-key 'normal 'global (kbd "0 O") 'mnikn/evil-newline-above)
+(evil-define-key '(normal insert) 'global (kbd "<f1>") 'mnikn/evil-toggle-input-method)
+(evil-define-key '(normal insert) 'global (kbd "<f2>") 'toggle-company-english-helper)
+(evil-define-key '(normal insert) 'global (kbd "<f10>") 'mnikn/insert-translate-name)
 
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
@@ -109,7 +118,7 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
-    "ee" 'toggle-company-english-helper
+    ;; "ee" 'toggle-company-english-helper
     "ek" 'awesome-pair-kill
     "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
@@ -157,7 +166,8 @@
   (space-leader-def
     :keymaps 'go-mode-map
     "bb" 'mnikn/go-build
-    "be" 'mnikn/go-run)
+    "be" 'mnikn/go-run
+    "cj" 'godef-jump)
   )
 
 

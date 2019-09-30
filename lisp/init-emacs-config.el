@@ -34,6 +34,9 @@
   :config
   (pyim-basedict-enable))
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/insert-translated-name")
+(require 'insert-translated-name)
+
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
