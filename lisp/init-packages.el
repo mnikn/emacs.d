@@ -17,10 +17,10 @@
       (require-package package min-version t))))
 
 (defun install-packages (package-list)
+  (package-refresh-contents)
   "Install packages if not exists."
   (dolist (package package-list)
     (when (not (package-installed-p package))
-      (package-refresh-contents)
       (message "install package: %s" package)
       (package-install package))))
 
