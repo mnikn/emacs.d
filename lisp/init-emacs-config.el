@@ -57,7 +57,18 @@
   truncate-partial-width-windows nil
   scroll-margin 3
   scroll-conservatively 10000
+  enable-recursive-minibuffers t
   initial-frame-alist '((fullscreen . maximized)))
+
+(defadvice switch-to-buffer (before save-buffer-now)
+  (if (and
+        (not (equal major-mode 'gnus-group-mode))
+        (not (equal major-mode 'occur-mode))
+        (not (equal major-mode 'ivy-occur-mode))
+        (not (equal major-mode 'shell-mode))
+        (not (equal major-mode 'term-mode)))
+  (save-buffer)))
+(ad-activate 'switch-to-buffer)
 
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)

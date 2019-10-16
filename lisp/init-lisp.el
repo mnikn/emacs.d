@@ -2,12 +2,13 @@
 ;;; Commentary:
 ;;; Code:
 
-;; (define-advice show-paren-function (:around (fn) fix-show-paren-function)
-;;   "Highlight parens"
-;;   (cond ((looking-at-p "\\s(") (funcall fn))
-;; 	(t (save-excursion
-;; 	     (ignore-errors (backward-up-list))
-;; 	     (funcall fn)))))
+(define-advice show-paren-function (:around (fn) fix-show-paren-function)
+  "Highlight parens"
+  (cond ((looking-at-p "\\s(") (funcall fn))
+	(t (save-excursion
+	     (ignore-errors (backward-up-list))
+	     (funcall fn)))))
+(ad-activate 'show-paren-function)
 
 ;; (electric-pair-mode t)
 ;; (set-face-background 'show-paren-match (face-background 'default))

@@ -76,6 +76,7 @@
 (evil-define-key '(normal insert) 'global (kbd "<f1>") 'mnikn/evil-toggle-input-method)
 (evil-define-key '(normal insert) 'global (kbd "<f2>") 'toggle-company-english-helper)
 (evil-define-key '(normal insert) 'global (kbd "<f10>") 'mnikn/insert-translate-name)
+(evil-define-key '(insert) 'global (kbd "RET") 'reindent-then-newline-and-indent)
 
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
 (evil-define-key 'motion sx-question-list-mode-map  "S" 'sx-search)
