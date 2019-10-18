@@ -119,7 +119,6 @@
     "be" 'eval-buffer
     "bw" 'kill-buffer-and-window
     "bk" 'kill-buffer
-    ;; "ee" 'toggle-company-english-helper
     "ek" 'awesome-pair-kill
     "eK" 'awesome-pair-backward-kill
     "cj" 'lsp-find-definition
