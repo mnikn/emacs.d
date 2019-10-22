@@ -63,6 +63,11 @@
 (defadvice switch-to-buffer (before save-buffer-now)
   (if (and
         (not (buffer-file-name))
+        (not (equal major-mode 'gnus-group-mode))
+        (not (equal major-mode 'occur-mode))
+        (not (equal major-mode 'ivy-occur-mode))
+        (not (equal major-mode 'shell-mode))
+        (not (equal major-mode 'term-mode))
         (save-buffer)))
   (ad-activate 'switch-to-buffer))
 
