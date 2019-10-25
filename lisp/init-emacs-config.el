@@ -68,6 +68,7 @@
         (not (equal major-mode 'ivy-occur-mode))
         (not (equal major-mode 'shell-mode))
         (not (equal major-mode 'term-mode))
+        (not (equal major-mode 'messages-buffer-mode))
         (save-buffer)))
   (ad-activate 'switch-to-buffer))
 

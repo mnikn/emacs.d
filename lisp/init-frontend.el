@@ -2,6 +2,11 @@
 ;;; Commentary:
 ;;; Code:
 
+(defun mnikn/format-js ()
+  (interactive)
+  ;; (call-process-shell-command (format "eslint --fix %s" buffer-file-name)))
+  (async-shell-command (format "eslint --fix %s" buffer-file-name)))
+
 (use-package js2-mode
   :mode ("\\.js$" . js2-mode)
   )

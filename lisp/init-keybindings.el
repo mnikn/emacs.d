@@ -94,7 +94,8 @@
     "/" 'evilnc-comment-or-uncomment-lines
     "?" 'sx-search
     "," 'ansi-term
-    "RET" 'editorconfig-format-buffer
+    ;; "RET" 'editorconfig-format-buffer
+    "RET" 'indent-region
     "a" 'mark-whole-buffer
     "<left>" 'windmove-left
     "<right>" 'windmove-right
