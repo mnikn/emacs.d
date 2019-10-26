@@ -69,6 +69,7 @@
         (not (equal major-mode 'shell-mode))
         (not (equal major-mode 'term-mode))
         (not (equal major-mode 'messages-buffer-mode))
+        (not (equal major-mode 'gud-mode))
         (save-buffer)))
   (ad-activate 'switch-to-buffer))
 

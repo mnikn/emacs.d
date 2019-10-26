@@ -25,5 +25,7 @@
   :config
   (add-hook 'go-mode-hook 'go-eldoc-setup))
 
+(use-package go-dlv)
+
 (provide 'init-go)
 ;;; init-go.el ends here

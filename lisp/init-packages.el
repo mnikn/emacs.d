@@ -84,6 +84,7 @@
                          typescript-mode
                          go-mode
                          go-eldoc
+                         go-dlv
                          elpy
                          protobuf-mode
                          ;; web
