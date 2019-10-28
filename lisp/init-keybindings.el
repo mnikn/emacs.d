@@ -102,7 +102,7 @@
     "<up>" 'windmove-up
     "<down>" 'windmove-down
     "SPC" 'switch-to-buffer
-    "sg" 'counsel-projectile-git-grep
+    "sg" 'counsel-projectile-ag
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
     "sj" 'counsel-etags-find-tag-at-point
