@@ -101,7 +101,7 @@
     "<right>" 'windmove-right
     "<up>" 'windmove-up
     "<down>" 'windmove-down
-    "SPC" 'switch-to-buffer
+    "SPC" 'counsel-switch-buffer
     "sg" 'counsel-projectile-ag
     "ss" 'swiper
     "sp" 'swiper-thing-at-point
