@@ -141,7 +141,7 @@
     "p" 'projectile-command-map
     "ol" 'org-insert-link
     "ot" 'org-todo
-    "oc" 'org-capture
+    "oc" 'counsel-org-capture
     "od" 'org-archive-subtree
     "oa" 'org-agenda
     "op" 'org-set-property
