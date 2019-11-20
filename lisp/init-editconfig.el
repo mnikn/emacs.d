@@ -31,6 +31,10 @@
     :ensure t
     :commands (iedit-mode))
 
+(use-package evil-nerd-commenter
+    :ensure t
+    :commands (evilnc-comment-or-uncomment-lines))
+
 (provide 'init-editconfig)
 
 ;;; init-editconfig.el ends here

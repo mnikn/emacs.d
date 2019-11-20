@@ -28,6 +28,11 @@
     ("\\.jsx" . rjsx-mode))
 ;; ("\\.tsx" . rjsx-mode)
 
+(use-package scss-mode
+    :ensure t
+    :mode
+    ("\\.scss" . scss-mode))
+
 (use-package web-mode
     :ensure t
     :mode

@@ -106,6 +106,7 @@
         "sd" 'swiper-thing-at-point
         "sj" 'counsel-etags-find-tag-at-point
         "ff" 'find-file
+        "fp" 'ffap
         "fm" 'dired-jump
         "fc" 'mnikn/open-config-file
         "fo" 'mnikn/open-org-dir
@@ -124,7 +125,6 @@
         "cj" 'lsp-find-definition
         "cr" 'lsp-rename
         "cm" 'lsp-ui-imenu
-        "jp" 'ffap
         "jj" 'mnikn/evil-goto-mark-line
         "jm" 'mnikn/evil-quick-mark
         "jw" 'ace-window
