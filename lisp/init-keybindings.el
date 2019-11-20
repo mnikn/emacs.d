@@ -23,10 +23,10 @@
     (interactive)
     (evil-goto-mark-line 1))
 
-                                        ;(defun mnikn/insert-translate-name (ARG)
-                                        ;  (interactive "p")
-                                        ;  (evil-insert-state)
-                                        ;  (insert-translated-name-insert ARG))
+;;(defun mnikn/insert-translate-name (ARG)
+;;  (interactive "p")
+;;  (evil-insert-state)
+;;  (insert-translated-name-insert ARG))
 
 ;; editor
 (global-set-key (kbd "C-c =") 'er/expand-region)
@@ -36,10 +36,6 @@
 (global-set-key (kbd "C-c y") 'company-yasnippet)
 (global-set-key (kbd "S-<up>") 'mnikn/evil-move-up)
 (global-set-key (kbd "S-<down>") 'mnikn/evil-move-down)
-                                        ;(define-key awesome-pair-mode-map (kbd "(") 'awesome-pair-open-round)
-                                        ;(define-key awesome-pair-mode-map (kbd "[") 'awesome-pair-open-bracket)
-                                        ;(define-key awesome-pair-mode-map (kbd "{") 'awesome-pair-open-curly)
-                                        ;(define-key awesome-pair-mode-map (kbd "\"") 'awesome-pair-double-quote)
 (define-key go-mode-map (kbd "<backtab>") 'company-go)
 
 ;; emacs
@@ -74,8 +70,8 @@
 (evil-define-key 'normal 'global (kbd "0 o") 'mnikn/evil-newline-below)
 (evil-define-key 'normal 'global (kbd "0 O") 'mnikn/evil-newline-above)
 (evil-define-key '(normal insert) 'global (kbd "<f1>") 'mnikn/evil-toggle-input-method)
-                                        ;(evil-define-key '(normal insert) 'global (kbd "<f2>") 'toggle-company-english-helper)
-                                        ;(evil-define-key '(normal insert) 'global (kbd "<f10>") 'mnikn/insert-translate-name)
+;; (evil-define-key '(normal insert) 'global (kbd "<f2>") 'toggle-company-english-helper)
+;; (evil-define-key '(normal insert) 'global (kbd "<f10>") 'mnikn/insert-translate-name)
 ;; (evil-define-key '(insert) js2-mode-map (kbd "RET") 'reindent-then-newline-and-indent)
 
 (evil-define-key 'motion sx-question-list-mode-map  (kbd "<return>") 'sx-display)
@@ -132,7 +128,6 @@
         "jj" 'mnikn/evil-goto-mark-line
         "jm" 'mnikn/evil-quick-mark
         "jw" 'ace-window
-        "cc" 'flycheck-mode
         "wv" 'split-and-follow-vertically
         "wh" 'split-and-follow-horizontally
         "wd" 'delete-window

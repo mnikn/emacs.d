@@ -15,8 +15,10 @@
 (use-package go-mode
     :ensure t
     :mode ("\\.go" . go-mode)
-    :config
-    (add-hook 'before-save-hook 'gofmt-before-save))
+    :hook ((before-save . gofmt-before-save)))
+
+(use-package company-go
+    :ensure t)
 
 ;; (use-package company-go
 ;;   :config
@@ -24,8 +26,7 @@
 
 (use-package go-eldoc
     :ensure t
-    :config
-    (add-hook 'go-mode-hook 'go-eldoc-setup))
+    :hook ((go-mode . go-eldoc-setup)))
 
 (use-package go-dlv
     :ensure t)
