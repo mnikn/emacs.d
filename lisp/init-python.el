@@ -3,8 +3,9 @@
 ;;; Code:
 
 (use-package elpy
-  :config
-  (elpy-enable))
+    :ensure t
+    :config
+    (elpy-enable))
 
 (provide 'init-python)
 

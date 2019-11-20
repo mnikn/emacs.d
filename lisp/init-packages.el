@@ -4,103 +4,30 @@
 
 (require 'package)
 
+(defun mnikn/require-package (package &optional min-version no-refresh)
+  "Install given PACKAGE, optionally requiring MIN-VERSION.
+If NO-REFRESH is non-nil, the available package lists will not be
+re-downloaded in order to locate PACKAGE."
+  (or (package-installed-p package min-version)
+      (let* ((known (cdr (assoc package package-archive-contents)))
+             (versions (mapcar #'package-desc-version known)))
+        (if (cl-find-if (lambda (v) (version-list-<= min-version v)) versions)
+            (package-install package)
+          (if no-refresh
+              (error "No version of %s >= %S is available" package min-version)
+            (package-refresh-contents)
+            (require-package package min-version t))))))
 
-(defun require-package (package &optional min-version no-refresh)
-  "Ask elpa to install given package."
-  (cond
-    ((package-installed-p package min-version)
-      t)
-    ((or (assoc package package-archive-contents) no-refresh)
-      (package-install package))
-    (t
-      (package-refresh-contents)
-      (require-package package min-version t))))
+(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+                            ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+(setq package-enable-at-startup nil)
+(package-initialize)
 
-(defun install-packages (package-list)
-  "Install packages if not exists."
-  ;; (package-refresh-contents)
-  (dolist (package package-list)
-    (when (not (package-installed-p package))
-      (message "install package: %s" package)
-      (package-install package))))
+(mnikn/require-package 'use-package)
 
-(setq my-package-list '(
-                         use-package
-                         ;; emacs config
-                         ivy
-                         counsel
-                         swiper
-                         exec-path-from-shell
-                         helm
-                         evil
-                         general
-                         monokai-theme
-                         winum
-                         beacon
-                         powerline
-                         hungry-delete
-                         popwin
-                         wgrep
-                         restart-emacs
-                         pyim
-                         pyim-basedict
-                         rainbow-delimiters
-                         doom-themes
-                         treemacs
-                         treemacs-evil
-                         treemacs-projectile
-                         org-bullets
-                         deft
-                         ;; project mangement
-                         projectile
-                         counsel-projectile
-                         magit
-                         ;; editor
-                         indent-guide
-                         company
-                         company-go
-                         company-quickhelp
-                         editorconfig
-                         yasnippet
-                         yasnippet-snippets
-                         diff-hl
-                         evil-nerd-commenter
-                         evil-escape
-                         evil-surround
-                         expand-region
-                         iedit
-                         avy
-                         counsel-etags
-                         flycheck
-                         lsp-mode
-                         lsp-ui
-                         company-lsp
-                         ;; langs
-                         web-mode
-                         json-mode
-                         js2-mode
-                         rjsx-mode
-                         nodejs-repl
-                         typescript-mode
-                         go-mode
-                         go-eldoc
-                         go-dlv
-                         elpy
-                         protobuf-mode
-                         ;; web
-                         sx
-                         ;; tools
-                         ;; ox-reveal
-                         ;;                         ox-ioslide
-                         ))
-(setq-default package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-                                  ("melpa" . "http://elpa.emacs-china.org/melpa/"))
-  package-selected-packages my-package-list)
-(install-packages my-package-list)
 (eval-when-compile
-  (add-to-list 'load-path (concat user-emacs-directory "elpa"))
-  (require 'use-package))
-
+    (add-to-list 'load-path (concat user-emacs-directory "elpa"))
+    (require 'use-package))
 
 (provide 'init-packages)
 

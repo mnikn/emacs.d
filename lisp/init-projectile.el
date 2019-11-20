@@ -2,10 +2,12 @@
 ;;; Commentary:
 ;;; Code:
 
-(use-package projectile)
+(use-package projectile
+    :ensure t)
 (use-package counsel-projectile
-  :config
-  (counsel-projectile-mode t))
+    :ensure t
+    :config
+    (counsel-projectile-mode t))
 
 (provide 'init-projectile)
 

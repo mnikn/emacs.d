@@ -2,16 +2,17 @@
 ;;; Commentary:
 ;;; Code:
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
+(let ((normal-gc-cons-threshold (* 20 1024 1024))
+      (init-gc-cons-threshold (* 128 1024 1024)))
+  (setq gc-cons-threshold init-gc-cons-threshold)
+  (add-hook 'emacs-startup-hook
+            (lambda () (setq gc-cons-threshold normal-gc-cons-threshold))))
+
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-;;(let ((default-directory "~/.emacs.d/site-lisp"))
-;;	(normal-top-level-add-subdirs-to-load-path))
 
+;; Calls (package-initialize)
 (require 'init-packages)
 (require 'init-utils)
 (require 'init-emacs-config)
@@ -27,16 +28,14 @@
 (require 'init-go)
 (require 'init-frontend)
 (require 'init-python)
-(require 'init-lsp)
+;; (require 'init-lsp)
 (require 'init-ctags)
 (require 'init-org)
 (require 'init-web)
 (require 'init-keybindings)
 
-(setq custom-file (concat user-emacs-directory "custom.el"))
-(if (not (file-exists-p custom-file))
-    (write-region "" nil custom-file))
-(load custom-file)
+(when (file-exists-p custom-file)
+  (load custom-file))
 
 (provide 'init)
 

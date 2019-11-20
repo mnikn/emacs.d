@@ -3,46 +3,57 @@
 ;;; Code:
 
 (use-package doom-themes
-  :config
-  (load-theme 'doom-molokai t))
+    :ensure t
+    :config
+    (load-theme 'doom-molokai t))
 
 (use-package popwin
-  :config
-  (popwin-mode t))
+    :ensure t
+    :config
+    (popwin-mode t))
 
 (use-package diff-hl
-  :config
-  (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
-  (global-diff-hl-mode t))
+    :ensure t
+    :config
+    (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
+    (global-diff-hl-mode t))
 
 (use-package ivy
-  :config
-  (setq-default ivy-use-virtual-buffers t
-		ivy-re-builders-alist '((t . ivy--regex-plus)))
-  (ivy-mode t))
+    :ensure t
+    :config
+    (setq-default
+        ivy-use-virtual-buffers t
+        ivy-re-builders-alist '((t . ivy--regex-plus)))
+    (ivy-mode t))
 
 (use-package treemacs
-  :commands (treemacs))
+    :ensure t
+    :commands (treemacs))
 (use-package treemacs-evil
-  :after (treemacs))
+    :ensure t
+    :after (treemacs))
 (use-package treemacs-projectile
-  :after (treemacs))
+    :ensure t
+    :after (treemacs))
 
 
 (use-package powerline
-  :config
-  (powerline-center-evil-theme))
+    :ensure t
+    :config
+    (powerline-center-evil-theme))
 
 (use-package winum
-  :config
-  (winum-mode))
+    :ensure t
+    :config
+    (winum-mode))
 
 (use-package beacon
-  :config
-  (beacon-mode 1))
+    :ensure t
+    :config
+    (beacon-mode 1))
 
 (use-package indent-guide
-  :commands (indent-guide-mode))
+    :commands (indent-guide-mode))
 
 (tool-bar-mode -1)
 (menu-bar-mode -1)

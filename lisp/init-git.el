@@ -3,7 +3,8 @@
 ;;; Code:
 
 (use-package magit
-  :commands magit)
+    :ensure t
+    :commands magit)
 
 (provide 'init-git)
 
