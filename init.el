@@ -20,6 +20,7 @@
 (require 'init-editconfig)
 (require 'init-evil)
 (require 'init-git)
+(require 'init-term)
 (require 'init-company)
 (require 'init-flycheck)
 (require 'init-yasnippet)

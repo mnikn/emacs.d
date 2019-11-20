@@ -6,6 +6,11 @@
     :ensure t
     :commands magit)
 
+(use-package evil-magit
+    :ensure t
+    :after (magit))
+
+
 (provide 'init-git)
 
 ;;; init-git.el ends here
