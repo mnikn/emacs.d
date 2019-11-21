@@ -158,6 +158,7 @@
         "oq" 'org-set-tags
         "xps" 'sp-splice-sexp
         "xpr" 'sp-rewrap-sexp
+        "xpm" 'sp-mark-sexp
         )
 
     (space-leader-def
