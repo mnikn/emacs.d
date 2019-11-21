@@ -43,6 +43,10 @@
     ("\\.vue". web-mode)
     :config
     (setq-default web-mode-auto-close-style 2))
+
+(use-package typescript-mode
+    :ensure t
+    :mode ("\\.ts" . typescript-mode))
 ;; :config
 ;; (defun my/tsx-setup ()
 ;;   (when (and (stringp buffer-file-name)

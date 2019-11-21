@@ -35,6 +35,12 @@
     :ensure t
     :commands (evilnc-comment-or-uncomment-lines))
 
+(use-package smartparens
+    :ensure t
+    :config
+    (smartparens-global-mode 1)
+    )
+
 (provide 'init-editconfig)
 
 ;;; init-editconfig.el ends here

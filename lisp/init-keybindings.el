@@ -155,7 +155,10 @@
         "ob" 'org-toggle-checkbox
         "oer" 'org-babel-execute-src-block
         "oee" 'org-edit-src-code
-        "oq" 'org-set-tags)
+        "oq" 'org-set-tags
+        "xps" 'sp-splice-sexp
+        "xpr" 'sp-rewrap-sexp
+        )
 
     (space-leader-def
         :keymaps 'js2-mode-map
