@@ -38,8 +38,12 @@
 (use-package smartparens
     :ensure t
     :config
-    (smartparens-global-mode 1)
-    )
+    (smartparens-global-mode 1))
+
+(use-package hl-todo
+    :ensure t
+    :config
+    (global-hl-todo-mode))
 
 (provide 'init-editconfig)
 
