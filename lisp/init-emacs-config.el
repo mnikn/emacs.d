@@ -67,6 +67,9 @@
     :ensure t
     :commands (restart-emacs))
 
+(use-package wgrep
+    :ensure t)
+
 ;; (defadvice switch-to-buffer (before save-buffer-now)
 ;;     (if (and
 ;;             (not (buffer-file-name))

@@ -31,5 +31,9 @@
 (use-package go-dlv
     :ensure t)
 
+(use-package protobuf-mode
+    :ensure t
+    :mode ("\\.proto" . protobuf-mode))
+
 (provide 'init-go)
 ;;; init-go.el ends here
