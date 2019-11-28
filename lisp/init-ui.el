@@ -28,7 +28,9 @@
 
 (use-package treemacs
     :ensure t
-    :commands (treemacs))
+    :commands (treemacs)
+    :config
+    (setq treemacs-width 50))
 (use-package treemacs-evil
     :ensure t
     :after (treemacs))

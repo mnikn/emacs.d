@@ -136,6 +136,7 @@
         "glg" 'magit-log-current
         "gb" 'mnikn/magit-blame
         "p" 'projectile-command-map
+        "pt" 'treemacs
         "ol" 'org-insert-link
         "ot" 'org-todo
         "oc" 'counsel-org-capture
