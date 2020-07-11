@@ -10,12 +10,6 @@
     :ensure t
     :after (magit))
 
-(use-package magit-todos
-    :ensure t
-    :after (magit)
-    :config
-    (magit-todos-mode))
-
 (provide 'init-git)
 
 ;;; init-git.el ends here

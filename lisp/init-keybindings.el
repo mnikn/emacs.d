@@ -164,13 +164,25 @@
 
     (space-leader-def
         :keymaps 'js2-mode-map
-        "be" 'nodejs-repl-send-buffer)
+        "be" 'nodejs-repl-send-buffer
+        "cp" 'prettier-js
+        "cf" 'eslint-fix-file)
     
     (space-leader-def
         :keymaps 'go-mode-map
         "bb" 'mnikn/go-build
         "be" 'mnikn/go-run
         "cj" 'godef-jump)
+
+    (space-leader-def
+        :keymaps 'web-mode-map
+        "cp" 'prettier-js
+        "cf" 'eslint-fix-file)
+
+    (space-leader-def
+        :keymaps 'typescript-mode-map
+        "cp" 'prettier-js
+        "cf" 'eslint-fix-file)
     )
 
 

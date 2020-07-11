@@ -2,10 +2,29 @@
 ;;; Commentary:
 ;;; Code:
 
+(defun eslint-fix-file ()
+  (interactive)
+  (message "eslint --fixing the file" (buffer-file-name))
+  (shell-command (concat "eslint --fix " (buffer-file-name))))
+
+(defun eslint-fix-file-and-revert ()
+  (interactive)
+  (eslint-fix-file)
+  (revert-buffer t t))
+
+;; (add-hook 'js2-mode-hook
+;;           (lambda ()
+;;             (add-hook 'after-save-hook #'eslint-fix-file-and-revert)))
+
+
+(setq-default web-mode-markup-indent-offset 2)
 (defun mnikn/format-js ()
     (interactive)
     ;; (call-process-shell-command (format "eslint --fix %s" buffer-file-name)))
     (async-shell-command (format "eslint --fix %s" buffer-file-name)))
+
+(use-package prettier-js
+    :ensure t)
 
 (use-package js2-mode
     :ensure t
@@ -42,7 +61,8 @@
     ("\\.tsx". web-mode)
     ("\\.vue". web-mode)
     :config
-    (setq-default web-mode-auto-close-style 2))
+    (setq-default web-mode-auto-close-style 2)
+    (setq-default web-mode-markup-indent-offset 2))
 
 (use-package typescript-mode
     :ensure t
