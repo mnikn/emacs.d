@@ -9,15 +9,23 @@
 ;;         recentf-max-menu-items 100)
 ;;     (recentf-mode t))
 
-(use-package exec-path-from-shell
-    :ensure t
-    :config
-    (when (or (memq window-system '(mac ns x))
-              (unless (memq system-type '(ms-dos windows-nt))
-                  (daemonp)))
-        (exec-path-from-shell-initialize))
-    (dolist (var '("SSH_AUTH_SOCK" "SSH_AGENT_PID" "GPG_AGENT_INFO" "LANG" "LC_CTYPE"))
-        (add-to-list 'exec-path-from-shell-variables var)))
+;; (use-package exec-path-from-shell
+;;     :ensure t
+;;     :config
+;;     (when (or (memq window-system '(mac ns x))
+;;               (unless (memq system-type '(ms-dos windows-nt))
+;;                   (daemonp)))
+;;         (exec-path-from-shell-initialize))
+;;     (dolist (var '("SSH_AUTH_SOCK" "SSH_AGENT_PID" "GPG_AGENT_INFO" "LANG" "LC_CTYPE"))
+;;       (add-to-list 'exec-path-from-shell-variables var)))
+
+;; (use-package exec-path-from-shell
+;;   :ensure t
+;;   :custom
+;;   (exec-path-from-shell-check-startup-files nil)
+;;   :config
+;;   (push "HISTFILE" exec-path-from-shell-variables)
+;;   (exec-path-from-shell-initialize))
 
 (use-package pyim
     :ensure t

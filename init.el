@@ -10,6 +10,7 @@
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
+(add-to-list 'load-path "~/.emacs.d/site-lisp/evil-magit")
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; Calls (package-initialize)
@@ -29,7 +30,8 @@
 (require 'init-go)
 (require 'init-frontend)
 (require 'init-python)
-;; (require 'init-lsp)
+(require 'init-lua)
+(require 'init-lsp)
 (require 'init-ctags)
 (require 'init-org)
 (require 'init-web)

@@ -19,9 +19,9 @@
         (lambda (props) (setq web-mode-block-padding 0)))
     (editorconfig-mode t))
 
-(use-package avy
-    :ensure t
-    :commands (avy-goto-char-2))
+;; (use-package avy
+;;     :ensure t
+;;     :commands (avy-goto-char-2))
 
 (use-package expand-region
     :ensure t

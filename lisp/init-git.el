@@ -6,9 +6,8 @@
     :ensure t
     :commands magit)
 
-(use-package evil-magit
-    :ensure t
-    :after (magit))
+;; (load "~/.emacs.d/site-lisp/evil-magit.el")
+(require 'evil-magit)
 
 (provide 'init-git)
 

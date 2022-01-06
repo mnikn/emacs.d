@@ -20,6 +20,12 @@ re-downloaded in order to locate PACKAGE."
 
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                             ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+
+	
+;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+;;                             ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
+
+;; (setq package-archives '(("melpa" . "http://melpa.org/packages/")))
 (setq package-enable-at-startup nil)
 (package-initialize)
 
