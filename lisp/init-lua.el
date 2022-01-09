@@ -3,6 +3,7 @@
 ;;; Code:
 
 (use-package lua-mode :ensure t)
+(load "~/.emacs.d/site-lisp/pico8.el")
 
 (provide 'init-lua)
 
