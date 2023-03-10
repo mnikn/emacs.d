@@ -8,16 +8,16 @@
     :config
     (global-hungry-delete-mode t))
 
-(use-package editorconfig
-    :ensure t
-    :config
-    (add-hook 'editorconfig-hack-properties-functions
-        '(lambda (props)
-             (when (derived-mode-p 'makefile-mode)
-                 (puthash 'indent_style 2 props))))
-    (add-hook 'editorconfig-after-apply-functions
-        (lambda (props) (setq web-mode-block-padding 0)))
-    (editorconfig-mode t))
+;; (use-package editorconfig
+;;     :ensure t
+;;     :config
+;;     (add-hook 'editorconfig-hack-properties-functions
+;;         '(lambda (props)
+;;              (when (derived-mode-p 'makefile-mode)
+;;                  (puthash 'indent_style 2 props))))
+;;     (add-hook 'editorconfig-after-apply-functions
+;;         (lambda (props) (setq web-mode-block-padding 0)))
+;;     (editorconfig-mode t))
 
 ;; (use-package avy
 ;;     :ensure t

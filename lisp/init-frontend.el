@@ -84,7 +84,7 @@
   ("\\.css". web-mode)
   ("\\.tsx". web-mode)
   ("\\.jsx". web-mode)
-  ("\\.vue". web-mode)
+  ;; ("\\.vue". web-mode)
   :config
   (setq-default web-mode-auto-close-style 2)
   (setq-default web-mode-markup-indent-offset 2))

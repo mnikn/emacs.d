@@ -18,8 +18,10 @@ re-downloaded in order to locate PACKAGE."
             (package-refresh-contents)
             (require-package package min-version t))))))
 
-(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-                            ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+;; (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+;;                             ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+(setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+                            ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")))
 
 	
 ;; (setq package-archives '(("gnu"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
