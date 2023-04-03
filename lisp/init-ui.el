@@ -49,10 +49,10 @@
     :config
     (winum-mode))
 
-(use-package beacon
-    :ensure t
-    :config
-    (beacon-mode 1))
+;; (use-package beacon
+;;     :ensure t
+;;     :config
+;;     (beacon-mode 1))
 
 (use-package indent-guide
     :commands (indent-guide-mode))

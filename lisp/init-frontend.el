@@ -39,10 +39,11 @@
 
 (use-package tide
   :ensure t
-  :after (typescript-mode company flycheck)
+  :after (company flycheck)
+  ;; :mode ("\\.vue$" . tide-mode)
   :hook ((typescript-mode . tide-setup)
           (typescript-mode . tide-hl-identifier-mode)
-          (web-mode . tide-setup)
+          ;; (web-mode . tide-setup)
           (typescript-mode . tide-hl-identifier-mode)
           ))
 
@@ -52,6 +53,8 @@
 (use-package js2-mode
   :ensure t
   :mode ("\\.js$" . js2-mode)
+  :mode ("\\.mjs$" . js2-mode)
+  :mode ("\\.cjs$" . js2-mode)
   )
 (add-hook 'js2-mode-hook #'setup-tide-mode)
 
@@ -84,15 +87,16 @@
   ("\\.css". web-mode)
   ("\\.tsx". web-mode)
   ("\\.jsx". web-mode)
-  ;; ("\\.vue". web-mode)
+  ("\\.vue". web-mode)
+  ;; ("\\.ts". web-mode)
   :config
   (setq-default web-mode-auto-close-style 2)
   (setq-default web-mode-markup-indent-offset 2))
 
-;; (use-package typescript-mode
-;;   :ensure t
-;;   :mode
-;;   ("\\.ts" . typescript-mode))
+(use-package typescript-mode
+  :ensure t
+  :mode
+  ("\\.ts$" . typescript-mode))
 ;; :config
 ;; (add-hook 'typescript-mode-hook #'lsp)
 

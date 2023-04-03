@@ -27,16 +27,16 @@
 ;;   (push "HISTFILE" exec-path-from-shell-variables)
 ;;   (exec-path-from-shell-initialize))
 
-(use-package pyim
-    :ensure t
-    :commands (toggle-input-method)
-    :config
-    (set-default pyim-default-scheme 'pyim-shuangpin))
-(use-package pyim-basedict
-    :ensure t
-    :after (pyim)
-    :config
-    (pyim-basedict-enable))
+;; (use-package pyim
+;;     :ensure t
+;;     :commands (toggle-input-method)
+;;     :config
+;;     (set-default pyim-default-scheme 'pyim-shuangpin))
+;; (use-package pyim-basedict
+;;     :ensure t
+;;     :after (pyim)
+;;     :config
+;;     (pyim-basedict-enable))
 
 (use-package rainbow-delimiters
     :ensure t

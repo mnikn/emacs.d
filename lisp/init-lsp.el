@@ -5,6 +5,14 @@
 
 (use-package lsp-mode
   :ensure t)
+  ;; :config
+  ;; (add-hook 'web-mode-hook #'lsp))
+
+;; (use-package vue-mode
+;;   :ensure t
+;;   :mode "\\.vue\\'"
+;;   :config
+;;   (add-hook 'vue-mode-hook #'lsp))
 
 ;; (require 'lsp-clients)
 ;; (use-package lsp-mode
