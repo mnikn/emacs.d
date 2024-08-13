@@ -36,7 +36,7 @@
 (global-set-key (kbd "C-c y") 'company-yasnippet)
 (global-set-key (kbd "S-<up>") 'mnikn/evil-move-up)
 (global-set-key (kbd "S-<down>") 'mnikn/evil-move-down)
-(define-key go-mode-map (kbd "<backtab>") 'company-go)
+;; (define-key go-mode-map (kbd "<backtab>") 'company-go)
 
 ;; emacs
 (global-set-key (kbd "M-x") 'counsel-M-x)
@@ -122,9 +122,11 @@
     "bk" 'kill-buffer
     ;; "ek" 'awesome-pair-kill
     ;; "eK" 'awesome-pair-backward-kill
-    "cj" 'lsp-find-definition
-    "cr" 'lsp-rename
-    "cm" 'lsp-ui-imenu
+    "cj" 'lsp-bridge-find-def
+    "cr" 'lsp-bridge-rename
+    "ca" 'lsp-bridge-code-action
+    "cf" 'lsp-bridge-code-format
+    "cd" 'lsp-bridge-popup-documentation
     "jj" 'mnikn/evil-goto-mark-line
     "jm" 'mnikn/evil-quick-mark
     "jw" 'ace-window
@@ -164,13 +166,6 @@
     )
 
   (space-leader-def
-    :keymaps 'js2-mode-map
-    "be" 'nodejs-repl-send-buffer
-    "cp" 'prettier-js
-    "cf" 'eslint-fix-file-and-revert)
-
-
-  (space-leader-def
     :keymaps 'scss-mode-map
     "cf" 'stylelint-fix-file-and-revert)
 
@@ -198,8 +193,21 @@
     )
 
   (space-leader-def
-    :keymaps 'tide-mode-map
-    "cj" 'tide-jump-to-definition
+    :keymaps 'javascript-mode-map
+    "cp" 'prettier-js
+    "cf" 'eslint-fix-file-and-revert
+    )
+
+  (space-leader-def
+    :keymaps 'markdown-mode-map
+    "mp" 'markdown-preview
+    )
+
+  (space-leader-def
+    :keymaps 'gdscript-mode-map
+    ;; "cf" 'gdscript-format-buffer
+    "cf" 'gdscript-format-buffer
+    "cp" 'gdscript-format-buffer
     )
   )
 

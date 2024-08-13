@@ -17,8 +17,8 @@
     :mode ("\\.go" . go-mode)
     :hook ((before-save . gofmt-before-save)))
 
-(use-package company-go
-    :ensure t)
+;; (use-package company-go
+;;     :ensure t)
 
 ;; (use-package company-go
 ;;   :config
