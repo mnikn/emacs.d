@@ -131,6 +131,7 @@
     "wv" 'split-and-follow-vertically
     "wh" 'split-and-follow-horizontally
     "wd" 'delete-window
+    "wc" 'ispell-comment-or-string-at-point
     "gs" 'magit-status
     "gll" 'magit-log-buffer-file
     "glg" 'magit-log-current
@@ -166,7 +167,18 @@
     :keymaps 'js2-mode-map
     "be" 'nodejs-repl-send-buffer
     "cp" 'prettier-js
-    "cf" 'eslint-fix-file)
+    "cf" 'eslint-fix-file-and-revert)
+
+
+  (space-leader-def
+    :keymaps 'scss-mode-map
+    "cf" 'stylelint-fix-file-and-revert)
+
+
+  (space-leader-def
+    :keymaps 'json-mode-map
+    "cf" 'json-mode-beautify
+    "cp" 'json-mode-beautify)
   
   (space-leader-def
     :keymaps 'go-mode-map
@@ -177,12 +189,16 @@
   (space-leader-def
     :keymaps 'web-mode-map
     "cp" 'prettier-js
-    "cf" 'eslint-fix-file)
+    "cf" 'eslint-fix-file-and-revert)
 
   (space-leader-def
     :keymaps 'typescript-mode-map
     "cp" 'prettier-js
-    "cf" 'eslint-fix-file
+    "cf" 'eslint-fix-file-and-revert
+    )
+
+  (space-leader-def
+    :keymaps 'tide-mode-map
     "cj" 'tide-jump-to-definition
     )
   )

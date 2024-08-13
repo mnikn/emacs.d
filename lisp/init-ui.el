@@ -5,7 +5,9 @@
 (use-package doom-themes
     :ensure t
     :config
-    (load-theme 'doom-molokai t))
+    (load-theme 'doom-dracula t))
+    ;; (load-theme 'doom-flatwhite t))
+    ;; (load-theme 'doom-molokai t))
 
 (use-package popwin
     :ensure t
@@ -66,6 +68,12 @@
 (set-face-background 'show-paren-match (face-background 'default))
 (set-face-foreground 'show-paren-match "#03a1fc")
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)
+
+(defun set-buffer-text-scale ()
+  "Set the text scale to 1 for the current buffer."
+  (interactive)
+  (text-scale-set 1))
+(add-hook 'find-file-hook 'set-buffer-text-scale)
 
 (provide 'init-ui)
 

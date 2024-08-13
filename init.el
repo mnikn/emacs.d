@@ -29,6 +29,7 @@
 (require 'init-lisp)
 (require 'init-go)
 (require 'init-frontend)
+;; (require 'init-godot)
 (require 'init-python)
 (require 'init-lua)
 (require 'init-lsp)

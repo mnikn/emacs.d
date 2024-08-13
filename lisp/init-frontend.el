@@ -5,11 +5,23 @@
 (defun eslint-fix-file ()
   (interactive)
   (message "eslint --fixing the file" (buffer-file-name))
-  (shell-command (concat "eslint --fix " (buffer-file-name))))
+  (shell-command (concat "npx eslint --fix " (buffer-file-name))))
 
 (defun eslint-fix-file-and-revert ()
   (interactive)
   (eslint-fix-file)
+  (revert-buffer t t))
+
+
+(defun stylelint-fix-file ()
+  (interactive)
+  (message "stylelint --fixing the file" (buffer-file-name))
+  (shell-command (concat "npx stylelint --fix " (buffer-file-name))))
+
+
+(defun stylelint-fix-file-and-revert ()
+  (interactive)
+  (stylelint-fix-file)
   (revert-buffer t t))
 
 (defun setup-tide-mode ()
@@ -40,7 +52,7 @@
 (use-package tide
   :ensure t
   :after (company flycheck)
-  ;; :mode ("\\.vue$" . tide-mode)
+  ;; :mode ("\\.tsx$" . setup-tide-mode)
   :hook ((typescript-mode . tide-setup)
           (typescript-mode . tide-hl-identifier-mode)
           ;; (web-mode . tide-setup)
@@ -57,6 +69,7 @@
   :mode ("\\.cjs$" . js2-mode)
   )
 (add-hook 'js2-mode-hook #'setup-tide-mode)
+(add-hook 'web-mode-hook #'setup-tide-mode)
 
 
 ;; (use-package tide
